@@ -80,12 +80,21 @@
     </div>
   </main>
         </div>
-        <div id="offlineMessage">
+              <div id="offlineMessage">
+          <div class="overlay" id="overlay"></div>
+        <div class="popup-container" id="popup">
     <span class="prompt">$</span>
     <h1>You are currently offline</h1>
     <p>Please check your internet connection and try again.</p>
     <button onclick="retryConnection()">Retry</button>
-  </div>
+        </div>
+      
+ <!--       <div id="offlineMessage">
+    <span class="prompt">$</span>
+    <h1>You are currently offline</h1>
+    <p>Please check your internet connection and try again.</p>
+    <button onclick="retryConnection()">Retry</button>
+  </div> -->
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
