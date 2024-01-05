@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're Offline</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #1e1f29; /* Dark terminal background color */
+      color: #abb2bf; /* Text color */
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    h1 {
+      color: #e44d26; /* Red color for emphasis */
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      text-align: center;
+    }
+
+    .offline-icon::before {
+      content: '$';
+      font-size: 2em;
+      color: #e44d26;
+      margin-right: 10px;
+    }
+
+    .offline-icon {
+      font-size: 4em;
+      color: #e44d26;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="offlineMessage">You're Offline</h1>
+  <i class="fas fa-wifi offline-icon"></i>
+  <p>Please check your internet connection and try again.<br>-AizerTech</p>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const offlineMessage = document.getElementById('offlineMessage');
+
+      // Check if the browser is online or offline
+      function updateOnlineStatus() {
+        if (navigator.onLine) {
+          offlineMessage.textContent = 'You\'re Online';
+        } else {
+          offlineMessage.textContent = 'You\'re Offline';
+        }
+      }
+
+      // Add event listeners for online and offline events
+      window.addEventListener('online', updateOnlineStatus);
+      window.addEventListener('offline', updateOnlineStatus);
+
+      // Initial check on page load
+      updateOnlineStatus();
+    });
+  </script>
+
+</body>
+</html>
