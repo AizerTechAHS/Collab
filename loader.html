@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #0a0a0a; /* Dark terminal background color */
+      color: #00ff00; /* Text color */
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .loader-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .circle-loader {
+      width: 40px;
+      height: 40px;
+      border: 3px solid transparent; /* Transparent border for the gap */
+      border-top-color: #00ff00; /* Circle color */
+      border-radius: 50%;
+      animation: spinCircle 2s linear infinite; /* Faster rotation */
+    }
+
+    @keyframes spinCircle {
+      0% {
+        transform: rotate(0deg);
+      }
+      25% {
+        transform: rotate(90deg);
+      }
+      50% {
+        transform: rotate(180deg);
+      }
+      75% {
+        transform: rotate(270deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loading-text {
+      margin-top: 10px;
+    }
+  </style>
+  <title>Circle Loader</title>
+</head>
+<body>
+
+<div class="loader-container">
+  <div class="circle-loader"></div>
+  <div class="loading-text" id="loadingText">Loading...<br>Made by: Aizer Tech</div>
+</div>
+
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const func = urlParams.get('func');
+
+  const functionLinks = {
+    'Games': 'Games',
+    'Settings': 'Settings',
+    // Add more functions
+  };
+
+  setTimeout(function() {
+    const targetLink = functionLinks[func] || 'default.html';
+    window.location.href = targetLink;
+  }, 5000); // 5000 milliseconds (5 seconds)
+</script>
+
+</body>
+</html>
