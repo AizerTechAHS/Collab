@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Not Found</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #282c35; /* Dark background color */
+      color: #abb2bf; /* Text color */
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .terminal {
+      padding: 20px;
+      border: 2px solid #56b6c2; /* Border color */
+      border-radius: 5px;
+      background-color: #1e1f29; /* Terminal background color */
+      box-shadow: 0 0 10px rgba(86, 182, 194, 0.5); /* Box shadow color */
+      width: 80%;
+      max-width: 400px;
+      text-align: left;
+    }
+
+    .prompt {
+      color: #61aeee; /* Prompt color */
+      margin-bottom: 10px;
+    }
+
+    .command {
+      color: #abb2bf; /* Command color */
+      margin-bottom: 5px;
+    }
+
+    .output {
+      color: #56b6c2; /* Output color */
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .message {
+      color: #abb2bf; /* Message color */
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="terminal">
+      <div class="prompt">$</div>
+      <div class="command">404 Not Found</div>
+      <div class="output">
+        The requested page "<span id="invalidLink"></span>" could not be found.
+      </div>
+      <div class="message" id="suggestionMessage"></div>
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Extract the invalid URL from the current window's location
+      const invalidUrl = window.location.href.split('/').pop();
+      
+      // Display the invalid link in the output
+      document.getElementById('invalidLink').textContent = invalidUrl;
+
+      // Suggestions (You can customize these based on your actual links)
+      const suggestions = [
+        { link: 'index.html', label: 'Home' },
+        { link: 'Games.html', label: 'Games' },
+        // Add more suggestions as needed
+      ];
+
+      // Find the closest suggestion (simple example based on similarity)
+      const closestSuggestion = suggestions.reduce((closest, suggestion) => {
+        const similarity = similarityScore(invalidUrl, suggestion.link);
+        return similarity > closest.score ? { suggestion, score: similarity } : closest;
+      }, { suggestion: null, score: 0 });
+
+      // Display the suggestion message
+      const suggestionMessage = document.getElementById('suggestionMessage');
+      if (closestSuggestion.suggestion) {
+        suggestionMessage.textContent = `Did you mean to type "${closestSuggestion.suggestion.label}"?`;
+      } else {
+        suggestionMessage.textContent = 'No similar links found.';
+      }
+
+      function similarityScore(str1, str2) {
+        const len1 = str1.length;
+        const len2 = str2.length;
+        const maxLength = Math.max(len1, len2);
+        let common = 0;
+
+        for (let i = 0; i < maxLength; i++) {
+          if (str1[i] === str2[i]) {
+            common++;
+          }
+        }
+
+        return common / maxLength;
+      }
+    });
+  </script>
+
+</body>
+</html>
