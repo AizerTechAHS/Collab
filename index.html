@@ -80,21 +80,50 @@
     </div>
   </main>
         </div>
-              <div id="offlineMessage">
-          <div class="overlay" id="overlay"></div>
-        <div class="popup-container" id="popup">
+
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+      color: #fff; /* White text color */
+      font-family: 'Arial', sans-serif;
+    }
+
+    #offlineMessage {
+      max-width: 400px;
+      padding: 20px;
+      border: 2px solid #e44d26; /* Red border color */
+      border-radius: 8px;
+      background-color: #282c34; /* Dark terminal background color */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light gray box shadow */
+      text-align: center;
+    }
+
+    .prompt {
+      color: #61afef; /* Blue prompt color */
+      font-weight: bold;
+    }
+
+    h1 {
+      color: #e44d26; /* Red color for emphasis */
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id="offlineMessage">
     <span class="prompt">$</span>
     <h1>You are currently offline</h1>
     <p>Please check your internet connection and try again.</p>
     <button onclick="retryConnection()">Retry</button>
-        </div>
-      
- <!--       <div id="offlineMessage">
-    <span class="prompt">$</span>
-    <h1>You are currently offline</h1>
-    <p>Please check your internet connection and try again.</p>
-    <button onclick="retryConnection()">Retry</button>
-  </div> -->
+  </div>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -125,5 +154,23 @@
       location.reload(); // Reload the page
     }
   </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
     </body>
 </html>
