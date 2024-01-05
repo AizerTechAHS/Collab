@@ -66,6 +66,9 @@
 
       // Initial check on page load
       updateOnlineStatus();
+
+      // Check online status every 5 seconds
+      setInterval(updateOnlineStatus, 5000);
     });
   </script>
 
