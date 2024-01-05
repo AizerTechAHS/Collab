@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<script>
+</script>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!---------------------------->
+	<meta name="viewport" content="width=device-width">
+	<title>Games</title>
+	<link href="https://aizertechahs.github.io/style.css" rel="stylesheet" type="text/css" />
+	<link href="/style/style.css" rel="stylesheet" type="text/css" />
+
+	<script src="https://kit.fontawesome.com/d08ce418ca.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<!--────────────────Headerh───────────────-->
+		<header>
+			<a class="logo" href="#home">
+				<img src="Collab" alt="Collab" />
+			</a>
+			<nav>
+				<ul class="nav-bar">
+					<div class="bg"></div>
+					<li><a class="nav-link" href="index.html"><i class="fa-solid fa-house fa-bounce" style="color: #075ced;"></i>
+					<li><a class="nav-link" href="#Games">Games</a></li>
+
+
+				</ul>
+
+
+
+
+
+				<div class="hamburger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="filter"></div>
+			<section class="intro">
+				<h3>Unblocked Sites
+					<hr>
+				</h3>
+				<br>
+				<br>
+				<center>
+					<div id="SearchBar">
+						<input placeholder="Game Name" type="text" id="search">
+						<i class="fa-solid fa-magnifying-glass fa-beat" style="color: #43da0b;" type="button"
+							onclick="search(document.getElementById('search').value)"></i>
+					</div>
+				</center>
+				<br>
+				<br>
+				<br>
+				<br>
+				<!-- GameBox -->
+				<div id="Games">
+
+					<h3>Games</h3>
+					<div class="work-box">
+						<div class="work">
+							<div class="card">
+								<a href="javascript:void(0);" onclick="Link1('https://smashkarts.io/');">
+									<img src="https://aizertechahs.github.io/Images/SmashKarts.png">
+								</a>
+								<a href="javascript:void(0);" onclick="Link1('https://smashkarts.io/');">
+									<div class="work-content">Smask Karts</div>
+								</a>
+							</div>
+						</div>
+						<br>
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<style>
+						@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+						:root {
+							--main-background: #0b0c0f;
+							--main-fonts-color: #22ff00;
+							/* --main-decor-color:#377172; */
+							--main-tab-bar-color: #3a3b3a;
+							--main-header-background: #000000;
+							--main-font-family: 'Poppins', sans-serif;
+						}
+
+						.work {
+							display: flex;
+							flex: 1;
+							flex-wrap: wrap;
+							justify-content: center;
+							align-items: center;
+							padding: 20px;
+						}
+
+						.card {
+							display: flex;
+							flex-direction: column;
+							margin: 10px;
+							width: 150px;
+							height: 150px;
+							border-radius: 12px;
+							background: var(--main-decor-color);
+						}
+
+						.card img {
+							width: 100%;
+							height: 100%;
+							border-radius: 10px 10px 0px 0px;
+						}
+
+						.card .work-content {
+							text-align: center;
+							padding: 10px 5px;
+							font-size: 1rem;
+							color: var(--main-fonts-color);
+							font-family: var(--main-font-family);
+							cursor: pointer;
+						}
+
+						.card a {
+							text-decoration: none;
+						}
+
+						.card .work-content:hover {
+							color: #202020;
+						}
+
+						/*
+          .card:hover{
+            box-shadow: 0 0 1.5rem #438384;
+          }
+          */
+					</style>
+
+					<!--SearchBarCode-->
+					<script>
+						function search(string) {
+							window.find(string);
+						}
+					</script>
+					<!--Confirmation Button AKA "Confirm Launch?"-->
+					<div id="confirm" style="display:none;">
+						<h2>Confirm Launch?</h2>
+						<div>
+							<button class="button" id="confirm-yes" onclick="">Yes</button>
+							<button class="button" onclick="document.getElementById('confirm').style.display = 'none'">No</button>
+						</div>
+					</div>
