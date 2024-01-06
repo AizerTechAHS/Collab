@@ -85,10 +85,18 @@ function updateTime() {
 	time.innerHTML = currentTime;
 }
 
-// Update time every second
-
 setInterval(updateTime, 1000);
 
-// Initial call to display time immediately
-//updateTime();
 
+    document.getElementById("search-input").addEventListener("keyup", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            performSearch();
+        }
+    });
+
+    function performSearch() {
+        var searchQuery = document.getElementById("search-input").value;
+        
+        alert("Searching for: " + searchQuery);
+    }
