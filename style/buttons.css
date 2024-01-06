@@ -18,13 +18,13 @@ color: red;
 }
 
 #confirm {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: darkgray;
-  text-align: center;
-  padding: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: darkgray;
+    text-align: center;
+    padding: 5px;
 }
 
 footer {
