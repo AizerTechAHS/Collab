@@ -86,17 +86,3 @@ function updateTime() {
 }
 
 setInterval(updateTime, 1000);
-
-
-    document.getElementById("search-input").addEventListener("keyup", function (event) {
-        if (event.key === "Enter") {
-            event.preventDefault();
-            performSearch();
-        }
-    });
-
-    function performSearch() {
-        var searchQuery = document.getElementById("search-input").value;
-        
-        alert("Searching for: " + searchQuery);
-    }
