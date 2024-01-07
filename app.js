@@ -1,6 +1,6 @@
 auth0.createAuth0Client({
   domain: "dev-22oaq2tbgkqvhvjl.us.auth0.com",
-  clientId: "yja2fK5Eh5dwLPATqQhiNqgWtVU3Oh2m",
+  clientId: "dVGANIXZisqVRWbwVWavrbI2Hht95stV",
   authorizationParams: {
     redirect_uri: window.location.origin
   }
