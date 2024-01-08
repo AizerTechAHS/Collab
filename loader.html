@@ -59,7 +59,7 @@
 
 <div class="loader-container">
   <div class="circle-loader"></div>
-  <div class="loading-text" id="loadingText">Loading...<br>Made by: Aizer Tech<br>&<br>Gamer Verses</div>
+  <div class="loading-text" id="loadingText">Loading...<br>Made by: Aizer Tech<br>&<br>Gamer Verse</div>
 </div>
 
 <script>
@@ -67,9 +67,9 @@
   const func = urlParams.get('func');
 
   const functionLinks = {
-    'Games': 'Games',
+    'Games': 'Games/Home',
     'About': 'About',
-    'Index': '',
+    'Index': '/',
     'Settings': 'Settings',
     // Add more functions
   };
@@ -77,7 +77,7 @@
   setTimeout(function() {
     const targetLink = functionLinks[func] || 'default.html';
     window.location.href = targetLink;
-  }, 3000); // 5000 milliseconds (5 seconds)
+  }, 0); // 5000 milliseconds (5 seconds)
 </script>
 
 </body>

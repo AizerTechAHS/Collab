@@ -5,90 +5,102 @@
 <html>
   <head>
 
-      <meta charset="utf-8">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9680897720849446"
-     crossorigin="anonymous"></script>
-<script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
-  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-      <meta name="viewport" content="width=device-width">
-      <title>Unnamed</title>
-<meta name="google-site-verification" content="J0IZWujNT6xrYnFB9adhvBocUoLZx2ylEiW6Pwi-4d0" />
-      <link href="https://aizertechahs.github.io/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <script async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9680897720849446"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+    <meta name="viewport" content="width=device-width">
+    <title>Unnamed</title>
+    <meta name="google-site-verification"
+      content="J0IZWujNT6xrYnFB9adhvBocUoLZx2ylEiW6Pwi-4d0" />
+    <link href="https://aizertechahs.github.io/style.css" rel="stylesheet"
+      type="text/css" />
     <link href="style/buttons.css" rel="stylesheet" type="text/css" />
-<script src="https://kit.fontawesome.com/d08ce418ca.js" crossorigin="anonymous"></script>
-      <link rel="icon" href="Images/teamSiteLogo.png">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="script.js"></script>
-      <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/d08ce418ca.js"
+      crossorigin="anonymous"></script>
+    <link rel="icon" href="Images/teamSiteLogo.png">
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/clock.js"></script>
   </head>
-    <body>
-      <div id="loader" class="fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-white z-50">
-        <div class="animate-spin rounded-full h-32 w-32"></div>
-      </div>
-        <div class="container">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <!--────────────────Headerh───────────────-->
-  <header>
-    <a class="logo" href="#home">
-              <img src="Collab" alt="Collab" />
-    </a>
-    <nav>	
-     <ul class="nav-bar"><div class="bg"></div>
-      <li><a class="nav-link" href="loader.html?func=Index"><i class="fa-solid fa-house fa-bounce" style="color: #075ced;"></i>
-      <li><a class="nav-link" href="loader.html?func=About">About Us</a></li>
-      <li><a class="nav-link" href="loader.html?func=Games">Games</a></li>
-      <li><a class="nav-link" href="loader.html?func=Settings">Settings</a></li>
-     </ul>
-
-
-
-
-
-      <div class="hamburger">
-        <div class="line1"></div>
-            <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <!--─────────────────Home────────────────-->
-    <div id="home">
-     <div class="filter"></div>
-     <section class="intro">
-      <h3>Unnamed<hr></h3>
-       <br> 
-       <h3>Info</h3>
-      <p></p>
-    <p>Time: <p id="time"></p></p>
-         <div id="offlineMessage">
-    <span class="prompt">$</span>
-    <h1>You are currently offline</h1>
-    <p>Please check your internet connection and try again.</p>
-    <button onclick="retryConnection()">Retry</button>
-  </div>
-<br><p>more</p>
-
-  <!--──────────────Contact────────────────-->
-      <div class="social-media">
-
-        <a href="SocialMedia/Discord.html" target="_blank"><i class='fab fa-discord'></i></a>
-        <a href="SocialMedia/Github.html" target="_blank"><i class='fab fa-github'></i></a>
-        <a onclick="WhatsappAlert()"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="link here" target="_blank"><i class="fab fa-youtube"></i></a>
-
-
-        <div class="overlay" id="overlay"></div>
-        <div class="popup-container" id="popup">
-          <p>Welcome to the Aizer Tech & Gamer Verse Collab Site</p>
-          <button class="button" onclick="closePopup()">Explore!</button>
-        </div>
-  </section>  
+  <body>
+    <div id="loader"
+      class="fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-white z-50">
+      <div class="animate-spin rounded-full h-32 w-32"></div>
     </div>
-  </main>
-        </div>
+    <div class="container">
+      <script src="https://apis.google.com/js/platform.js" async defer></script>
+      <!--────────────────Headerh───────────────-->
+      <header>
+        <a class="logo" href="#home">
+          <img src="Collab" alt="Collab" />
+        </a>
+        <nav>
+          <ul class="nav-bar"><div class="bg"></div>
+            <li><a class="nav-link" href="loader.html?func=Index"><i
+                  class="fa-solid fa-house fa-bounce"
+                  style="color: #075ced;"></i>
+                <li><a class="nav-link" href="loader.html?func=About">About
+                    Us</a></li>
+                <li><a class="nav-link"
+                    href="loader.html?func=Games">Games</a></li>
+                <li><a class="nav-link"
+                    href="loader.html?func=Settings">Settings</a></li>
+              </ul>
 
-  <style>
+              <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+            </nav>
+          </header>
+          <main>
+            <!--─────────────────Home────────────────-->
+            <div id="home">
+              <div class="filter"></div>
+              <section class="intro">
+                <h3>Unnamed<hr></h3>
+                <br>
+                <h3>Info</h3>
+                <p></p>
+                <p>Time: <p id="time"></p></p>
+                <div id="offlineMessage">
+                  <span class="prompt">$</span>
+                  <h1>You are currently offline</h1>
+                  <p>Please check your internet connection and try again.</p>
+                  <button onclick="retryConnection()">Retry</button>
+                </div>
+                <br><p>more</p>
+
+                <!--──────────────Contact────────────────-->
+                <div class="social-media">
+
+                  <a href="SocialMedia/Discord.html" target="_blank"><i
+                      class='fab fa-discord'></i></a>
+                  <a href="SocialMedia/Github.html" target="_blank"><i
+                      class='fab fa-github'></i></a>
+                  <a onclick="WhatsappAlert()"><i
+                      class="fa-brands fa-whatsapp"></i></a>
+                  <a href="link here" target="_blank"><i
+                      class="fab fa-youtube"></i></a>
+
+                  <div class="overlay" id="overlay"></div>
+                  <div class="popup-container" id="popup">
+                    <p>Welcome to the Aizer Tech & Gamer Verse Collab Site</p>
+                    <button class="button"
+                      onclick="closePopup()">Explore!</button>
+                  </div>
+                </section>
+              </div>
+            </main>
+          </div>
+
+          <style>
     #offlineMessage {
       max-width: 400px;
       padding: 20px;
@@ -111,8 +123,8 @@
     }
 
   </style>
-</head>
-  <script>
+        </head>
+        <script>
     document.addEventListener('DOMContentLoaded', function() {
       const offlineMessage = document.getElementById('offlineMessage');
 
@@ -141,21 +153,7 @@
       location.reload(); // Reload the page
     }
   </script>
-</html>
+      </html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
     </body>
-</html>
+  </html>

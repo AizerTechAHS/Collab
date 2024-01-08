@@ -6,7 +6,7 @@ function startGame(url) {
     var clasroomwindow = window.open(url, "ActivityCloakWindow");
   }
 
-	var blankData = `<!DOCTYPE html>
+  var blankData = `<!DOCTYPE html>
 <html>
 
 <head>
@@ -25,29 +25,7 @@ function startGame(url) {
 
   var ggwindow = window.open("", "Loading...", "width=1920,height=1080");
 
-	ggwindow.document.write(blankData);
-	/*
-  var xmlhttp;
-  if (window.XMLHttpRequest) {
-    xmlhttp = new XMLHttpRequest();
-  } else {
-    // code for older browsers
-    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-  }
-  xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      ggwindow.document.write(this.responseText);
-      if ($('#selfDestruct').is(':checked')) {
-        window.close();
-        window.onbeforeunload = function() { };
-
-
-      }
-    }
-  };
-  xmlhttp.open("GET", url, true);
-  xmlhttp.send();
-	*/
+  ggwindow.document.write(blankData);
 }
 
 
@@ -58,8 +36,9 @@ function Link1(url) {
   section.style.display = 'block';
   var button = document.getElementById('confirm-yes');
 
-  button.onclick = function() {
-      startGame(url);
+  button.onclick = function () {
+    section.style.display = 'none';
+    startGame(url);
   };
 }
 
@@ -73,16 +52,3 @@ function closePopup() {
   document.getElementById('overlay').style.display = 'none';
 }
 window.onload = showPopup;
-
-function updateTime() {
-  const now = new Date();
-  const hours = now.getHours().toString().padStart(2, '0');
-  const minutes = now.getMinutes().toString().padStart(2, '0');
-  const seconds = now.getSeconds().toString().padStart(2, '0');
-
-  const currentTime = `${hours}:${minutes}:${seconds}`;
-  var time = document.getElementById('time');
-	time.innerHTML = currentTime;
-}
-
-setInterval(updateTime, 1000);
