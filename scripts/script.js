@@ -28,9 +28,6 @@ function startGame(url) {
   ggwindow.document.write(blankData);
 }
 
-
-
-
 function Link1(url) {
   var section = document.getElementById('confirm');
   section.style.display = 'block';
@@ -41,14 +38,3 @@ function Link1(url) {
     startGame(url);
   };
 }
-
-function showPopup() {
-  document.getElementById('popup').style.display = 'block';
-  document.getElementById('overlay').style.display = 'block';
-}
-
-function closePopup() {
-  document.getElementById('popup').style.display = 'none';
-  document.getElementById('overlay').style.display = 'none';
-}
-window.onload = showPopup;
