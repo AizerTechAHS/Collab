@@ -57,7 +57,7 @@ window.onload = showPopup;
 
 document.addEventListener('DOMContentLoaded', function() {
   const currentThemeIndex = parseInt(localStorage.getItem('themeIndex')) || 0;
-  const themes = ['style.css', 'style-light.css'];
+  const themes = ['style/style.css', 'style/style-light.css'];
   const stylesheetLink = document.getElementById('theme-stylesheet');
 
   function applyTheme(themeIndex) {
