@@ -53,31 +53,30 @@ function closePopup() {
 }
 window.onload = showPopup;
 
-// script.js
+$(document).ready(function () {
+    // Check if a theme is stored in local storage
+    var storedTheme = localStorage.getItem('selectedTheme');
 
-document.addEventListener('DOMContentLoaded', function() {
-  const currentThemeIndex = parseInt(localStorage.getItem('themeIndex')) || 0;
-  const themes = ['style/style.css', 'style/style-light.css'];
-  const stylesheetLink = document.getElementById('theme-stylesheet');
+    // Set the theme based on the stored value or default to 'light'
+    if (storedTheme) {
+        setTheme(storedTheme);
+    } else {
+        setTheme('light');
+    }
 
-  function applyTheme(themeIndex) {
-    localStorage.setItem('themeIndex', themeIndex.toString());
-    const newTheme = themes[themeIndex];
-    stylesheetLink.href = newTheme;
-  }
+    $('#theme-selector').on('change', function () {
+        var selectedTheme = $(this).val();
+        setTheme(selectedTheme);
 
-  // Initialize the theme on page load
-  applyTheme(currentThemeIndex);
+        // Save the selected theme to local storage
+        localStorage.setItem('selectedTheme', selectedTheme);
+    });
 
-  // Function to toggle the theme
-  function toggleStylesheet() {
-    const newThemeIndex = (currentThemeIndex + 1) % themes.length;
-    applyTheme(newThemeIndex);
-  }
-
-  // Assign the toggleStylesheet function to a button click
-  const themeToggleBtn = document.getElementById('themeToggleBtn');
-  if (themeToggleBtn) {
-    themeToggleBtn.addEventListener('click', toggleStylesheet);
-  }
+    function setTheme(theme) {
+        if (theme === 'light') {
+            document.getElementById('theme-stylesheet').setAttribute('href', 'style/light.css');
+        } else if (theme === 'dark') {
+            $('#theme-stylesheet').attr('href', 'style/dark.css');
+        }
+    }
 });
