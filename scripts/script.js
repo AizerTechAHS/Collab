@@ -52,3 +52,32 @@ function closePopup() {
   document.getElementById('overlay').style.display = 'none';
 }
 window.onload = showPopup;
+
+// script.js
+
+document.addEventListener('DOMContentLoaded', function() {
+  const currentThemeIndex = parseInt(localStorage.getItem('themeIndex')) || 0;
+  const themes = ['style.css', 'style-light.css'];
+  const stylesheetLink = document.getElementById('theme-stylesheet');
+
+  function applyTheme(themeIndex) {
+    localStorage.setItem('themeIndex', themeIndex.toString());
+    const newTheme = themes[themeIndex];
+    stylesheetLink.href = newTheme;
+  }
+
+  // Initialize the theme on page load
+  applyTheme(currentThemeIndex);
+
+  // Function to toggle the theme
+  function toggleStylesheet() {
+    const newThemeIndex = (currentThemeIndex + 1) % themes.length;
+    applyTheme(newThemeIndex);
+  }
+
+  // Assign the toggleStylesheet function to a button click
+  const themeToggleBtn = document.getElementById('themeToggleBtn');
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', toggleStylesheet);
+  }
+});
