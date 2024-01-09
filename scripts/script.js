@@ -52,31 +52,3 @@ function closePopup() {
   document.getElementById('overlay').style.display = 'none';
 }
 window.onload = showPopup;
-
-$(document).ready(function () {
-    // Check if a theme is stored in local storage
-    var storedTheme = localStorage.getItem('selectedTheme');
-
-    // Set the theme based on the stored value or default to 'light'
-    if (storedTheme) {
-        setTheme(storedTheme);
-    } else {
-        setTheme('light');
-    }
-
-    $('#theme-selector').on('change', function () {
-        var selectedTheme = $(this).val();
-        setTheme(selectedTheme);
-
-        // Save the selected theme to local storage
-        localStorage.setItem('selectedTheme', selectedTheme);
-    });
-
-    function setTheme(theme) {
-        if (theme === 'light') {
-            document.getElementById('theme-stylesheet').setAttribute('href', 'style/light.css');
-        } else if (theme === 'dark') {
-            $('#theme-stylesheet').attr('href', 'style/dark.css');
-        }
-    }
-});
