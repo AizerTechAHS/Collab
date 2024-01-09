@@ -66,10 +66,17 @@
   const urlParams = new URLSearchParams(window.location.search);
   const func = urlParams.get('func');
 
+  if (window.location.hostname == 'https://aizertechahs.github.io') {
+    indexUrl = '/Goguardian-Bypasser/';
+
+  } else {
+    indexUrl = '/';
+  }
+
   const functionLinks = {
     'Games': 'Games/Home',
     'About': 'About',
-    'Index': '/',
+    'Index': indexUrl,
     'Settings': 'Settings',
     // Add more functions
   };
