@@ -173,7 +173,8 @@ a.nav-link{
 
 #projects{
 	margin-top:100px;
-    height: 100%;
+	margin-bottom: 100px;
+ height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
