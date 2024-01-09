@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 :root{
-  --main-background: #0b0c0f;
-  --main-fonts-color: #22ff00;
+  --main-background: #ffffff;
+  --main-fonts-color: #000000;
 /*	--main-decor-color:#377172; */
   --main-tab-bar-color:#3a3b3a;
       --main-header-background:#000000;
@@ -709,7 +709,7 @@ hr {
 
 #search{
     background-color: black;
-  
+
     display: inline-flex; 
     height: 32px; 
     width: 70%;
