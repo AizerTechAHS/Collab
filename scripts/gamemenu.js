@@ -21,4 +21,10 @@ var availableGames = [
     ['Test', 'Img/BlankImage.png', '']
 ];
 
+availableGames.sort(function(a, b) {
+    return a[0].localeCompare(b[0]);
+});
+
+console.log(availableGames);
+
 displayGameMenu(availableGames);
