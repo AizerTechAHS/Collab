@@ -739,3 +739,11 @@ hr {
 
 /*--This is for the settings page on "Settings.html"--*/
     
+#search {
+  background-color: black; 
+  display: inline-flex; 
+  height: 32px; 
+  width: 70%; 
+  padding-left: 3px; 
+  color: white;
+}
