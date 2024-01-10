@@ -1,5 +1,5 @@
 function changeTheme(theme) {
-    document.getElementById('theme-stylesheet').href = `https://aizertechahs.github.io/Goguardian/style/${theme}.css`;
+    document.getElementById('theme-stylesheet').href = `https://aizertechahs.github.io/Goguardian-Bypasser/style/${theme}.css`;
     localStorage.setItem('currentTheme', theme);
 }
 
