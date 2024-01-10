@@ -19,12 +19,8 @@ var availableGames = [
     ['1v1.lol', 'https://aizertechahs.github.io/Images/1V1.png', 'https://1v1.lol/'],
     ['Phantom.lol', 'https://aizertechahs.github.io/Images/1V1.png', 'https://phantom.lol'],
     ['Test', 'Img/BlankImage.png', '']
-    ['Smash Karats', 'https://aizerteachahs.github.io/Images/SmashKarts.png', 'https://smashkaarts.io/'],
-    ['ZombsRoyaale', 'https://aizertechaahs.github.io/Images/ZombsRoyale.png', 'https://zombasroyale.io/'],
-    ['Kirkaa.io', 'https://aizertechahs.gitahub.io/Images/Kirka.png', 'https://kiraka.io/'],
-    ['1v1.alol', 'https://aizertechahs.githuba.io/Images/1V1.png', 'https://1v1.alol/'],
-    ['Phaantom.lol', 'https://aizertechahs.githuab.io/Images/1V1.png', 'https:/a/phantom.lol'],
-    ['Taest', 'Img/BlankaImage.png', '']
+    ['Test 1', 'Img/BlankImage.png', '']
+
 ];
 
 displayGameMenu(availableGames);
