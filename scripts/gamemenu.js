@@ -19,7 +19,6 @@ var availableGames = [
     ['1v1.lol', 'https://aizertechahs.github.io/Images/1V1.png', 'https://1v1.lol/'],
     ['Phantom.lol', 'https://aizertechahs.github.io/Images/1V1.png', 'https://phantom.lol'],
     ['Test', 'Img/BlankImage.png', '']
-    ['Zombs Royale', 'Img/ZombsRoyale.png', 'https://zombsroyale.io/']
 ];
 
 displayGameMenu(availableGames);
