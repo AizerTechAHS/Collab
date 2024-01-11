@@ -14,7 +14,7 @@ function displayGameMenu(games) {
 
 var availableGames = [
     ['Smash Karts', 'https://aizertechahs.github.io/Images/SmashKarts.png', 'https://smashkarts.io/'],
-    ['ZombsRoyale', 'https://aizertechahs.github.io/Images/ZombsRoyale.png', 'https://zombsroyale.io/'],
+    ['Zombs Royale', 'https://aizertechahs.github.io/Images/ZombsRoyale.png', 'https://zombsroyale.io/'],
     ['Kirka.io', 'https://aizertechahs.github.io/Images/Kirka.png', 'https://kirka.io/'],
     ['1v1.lol', 'https://aizertechahs.github.io/Images/1V1.png', 'https://1v1.lol/'],
     ['Phantom.lol', 'https://aizertechahs.github.io/Images/1V1.png', 'https://phantom.lol'],
