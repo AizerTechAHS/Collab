@@ -92,7 +92,7 @@ a.nav-link{
 }
 
 #home .filter{
-	background: url('https://aizertechahs.github.io/Goguardian-Bypasser/Games/Img/Electro.gif') no-repeat;
+	background: url('../Img/Electro.gif') no-repeat;
 	background-size: cover;
 	background-position:center;
     position: absolute;
