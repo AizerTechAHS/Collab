@@ -13,10 +13,10 @@ function displayGameMenu(games) {
 }
 
 var availableGames = [
-    ['Smash Karts', 'https://aizertechahs.github.io/Images/SmashKarts.png', 'https://smashkarts.io/'],
-    ['Zombs Royale', 'https://aizertechahs.github.io/Images/ZombsRoyale.png', 'https://zombsroyale.io/'],
-    ['Kirka.io', 'https://aizertechahs.github.io/Images/Kirka.png', 'https://kirka.io/'],
-    ['1v1.lol', 'https://aizertechahs.github.io/Images/1V1.png', 'https://1v1.lol/'],
+    ['Smash Karts', 'Img/SmashKarts.png', 'https://smashkarts.io/'],
+    ['Zombs Royale', 'Img/ZombsRoyale.png', 'https://zombsroyale.io/'],
+    ['Kirka.io', 'Img/Kirka.png', 'https://kirka.io/'],
+    ['1v1.lol', 'Img/1V1.png', 'https://1v1.lol/'],
     ['Diep.io', 'https://aizertechahs.github.io/Images/Diep.png', 'https://diep.io'],
     ['Defly.io', 'https://aizertechahs.github.io/Images/Defly.png', 'https://defly.io/'],
     ['Test', 'Img/BlankImage.png', ''],
