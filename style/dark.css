@@ -218,15 +218,15 @@ a.nav-link{
 	display: flex;
 	flex-direction: column;
 	margin: 5px;
-	width: auto !important;
-	height: auto !important;
+	width: auto;
+	height: auto;
 	border-radius: 12px;
 	background: var(--main-tab-bar-color);
   }
 
   .card img {
-	width: 150px !important;
-	height: 150px !important;
+	width: 150px;
+	height: 150px;
 	border-radius: 10px 10px 0px 0px;
   }
 
