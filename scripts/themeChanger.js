@@ -1,5 +1,11 @@
 function changeTheme(theme) {
-    document.getElementById('theme-stylesheet').href = `https://aizertechahs.github.io/Goguardian-Bypasser/style/${theme}.css`;
+    if (window.location.hostname == 'aizertechahs.github.io') {
+        indexUrl = '/Goguardian-Bypasser/';
+    
+      } else {
+        indexUrl = '../';
+    }
+    document.getElementById('theme-stylesheet').href = `${indexUrl}style/${theme}.css`;
     localStorage.setItem('currentTheme', theme);
 }
 

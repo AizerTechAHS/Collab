@@ -18,13 +18,15 @@ var availableGames = [
     ['Kirka.io', 'https://aizertechahs.github.io/Images/Kirka.png', 'https://kirka.io/'],
     ['1v1.lol', 'https://aizertechahs.github.io/Images/1V1.png', 'https://1v1.lol/'],
     ['Phantom.lol', 'https://aizertechahs.github.io/Images/1V1.png', 'https://phantom.lol'],
-    ['Test', 'Img/BlankImage.png', '']
+    ['Diep.io', 'https://aizertechahs.github.io/Images/Diep.png', 'https://diep.io'],
+    ['Defly.io', 'https://aizertechahs.github.io/Images/Defly.png', 'https://defly.io/'],
+    ['Test', 'Img/BlankImage.png', ''],
 ];
 
 availableGames.sort(function(a, b) {
     return a[0].localeCompare(b[0]);
 });
 
-console.log(availableGames);
-
-displayGameMenu(availableGames);
+window.onload = function() {   
+    displayGameMenu(availableGames);
+};
