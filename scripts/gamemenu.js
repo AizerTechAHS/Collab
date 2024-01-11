@@ -5,7 +5,7 @@ function displayGameMenu(games) {
         var embeded = `
         <div class="card" onclick="Link1('${games[i][2]}');">
             <img src="${games[i][1]}">
-            <div class="work-content">${games[i][0]}</div>
+            <p class="work-content">${games[i][0]}</p>
         </div>`;
         
         game_menu.insertAdjacentHTML('beforeend', embeded);
