@@ -6,8 +6,8 @@
 
   <head>
     <!--Scripts-->
-    <!--ThemeChanger.js-->
      <script src="scripts/themeChanger.js"></script>
+     <script src="scripts/particles.js"></script>
     <!--ENDScripts-->
     <!--Style-->
     <link id="theme-stylesheet" rel="stylesheet" href="style/dark.css">
@@ -104,6 +104,22 @@
   <p>Add protection by adding a login system.</p>
 <button class="option" style="width: 150px;" onclick="showLoginPopup()" id="enabledLogin">Enable</button><button class="option" style="width: 150px;" onclick="disableLogin()" id="disabledLogin">Disable</button>
 </div>
+<div class="settingscontainer">
+  <br>
+  <p style="font-weight: bold;">Themes</p>
+  <p style="font-size:23px;">Customize your unblocker by choosing our themes. (Enable particles for effect)</p>
+  <select id="dropdown" class="option" style="text-align: center;">
+    <option disabled value="placeholder" selected>Select a theme</option>
+    <option value="swamp" class="option" style="color:black;">Swamp (Default)</option>
+      <option value="ocean" class="option" style="color:black;">Ocean</option>
+      <option value="starry" class="option" style="color:black;">Starry</option>
+      <option value="magma" class="option" style="color:black;">Magma</option>
+      <option value="sunset" class="option" style="color:black;">Sunset</option>
+      <option value="midnight" class="option" style="color:black;">Midnight</option>
+      <option value="obama" class="option" style="color:black;">Obama (New!)</option>
+  </select>
+  <button onclick="window.location.reload()" class="option" style="width:90px;">Save</button>
+</div>
 </div>
 <script>
   // Get the <select> element by its id
@@ -117,7 +133,46 @@
       // Store the selected option's value in localStorage
       localStorage.setItem('selectedOption', selectedOptionValue);
   });
+
+  // Check if there's a previously selected option in localStorage
+  const storedOptionValue = localStorage.getItem('selectedOption');
+
+  if (storedOptionValue) {
+      // Set the selected option based on the stored value
+      dropdown.value = storedOptionValue;
+  }
 </script>
+    <script>
+      // Check if Particles are enabled
+      var particles = localStorage.getItem('particles');
+      if (particles === 'disabled' || particles === null || particles === '') {
+        console.log('Particles are disabled.')
+      } else {
+       particlesJS("particles-js", {
+      "particles": {
+          "number": {
+              "value": 0,
+              "density": {
+                  "enable": true,
+                  "value_area": 800
+              }
+          },
+          "color": {
+              "value": "#32cf32"
+          },
+      },
+  });
+      }
+    </script>
+  <script>
+var bgUrl = localStorage.getItem('bgUrl');
+if (bgUrl === 'none' || bgUrl === null || bgUrl === '') {
+    console.log('No custom background set.');
+} else {
+    document.body.style.backgroundImage = `url(${bgUrl})`;
+    document.getElementById('particles-js').remove();
+}
+  </script>
             </section>
           </main>
         </div>
