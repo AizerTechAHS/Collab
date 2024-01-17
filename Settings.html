@@ -6,8 +6,6 @@
 
   <head>
      <script src="scripts/themeChanger.js"></script>
-     <script src="scripts/settings.js"></script>
-    <script src="scripts/cloak.js"></script>
     <script src="scripts/particles.js"></script>
     <link id="theme-stylesheet" rel="stylesheet" href="style/dark.css">
     <link href="style/buttons.css" rel="stylesheet" type="text/css" />
@@ -69,6 +67,7 @@
               <br>
               <br>
 <div class="containers">
+  <!--
   <div class="settingscontainer">
     <br>
     <p style="font-weight: bold;">Tab Cloaking</p>
@@ -86,7 +85,8 @@
   <p style="font-weight: bold;">About:Blank Cloak</p>
   <p>Disguises the page in a about:blank link</p>
   <button class="option" onclick="openWindow()">Open Blanker</button>
-</div>
+</div> 
+  -->
 <div class="settingscontainer">
     <br>
     <p style="font-weight: bold;">Theme</p>
@@ -94,12 +94,14 @@
     <button class="option" style="width: 150px;" id="enableCloak" onclick="changeTheme('dark')" >Dark</button>
     <button class="option" id="disableCloak" style="width: 150px;" onclick="changeTheme('light')" >Light</button>
 </div>
+  <!--
 <div class="settingscontainer">
   <br>
   <p style="font-weight: bold;" id="auth">Authentication</p>
   <p>Add protection by adding a login system.</p>
 <button class="option" style="width: 150px;" onclick="showLoginPopup()" id="enabledLogin">Enable</button><button class="option" style="width: 150px;" onclick="disableLogin()" id="disabledLogin">Disable</button>
 </div>
+  -->
 </div>
             </section>
           </main>
