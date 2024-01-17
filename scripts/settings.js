@@ -33,7 +33,7 @@ function googleCloak() {
 }
 function classroomCloak() {
     localStorage.setItem('cloakedTitle', 'Classes');
-    localStorage.setItem('cloakedIcon', 'https://proxy-server-8hdw.vercel.app/assets/img/classroom-icon.png);
+    localStorage.setItem('cloakedIcon', 'https://proxy-server-8hdw.vercel.app/assets/img/classroom-icon.png');
     tabCloak();
 }
 
