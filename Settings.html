@@ -91,7 +91,8 @@
     <br>
     <p style="font-weight: bold;">Advanced About:Blank Cloak</p>
     <p>Opens blanker without leaving site on browser history.</p>
-    <button class="option" style="width: 150px;" id="enableCloak" onclick="enableAboutBlank()">Enable</button><button class="option" id="disableCloak" style="width: 150px;" onclick="disableAboutBlank()">Disable</button>
+    <button class="option" style="width: 150px;" id="enableCloak" onclick="changeTheme('dark')" >Enable</button>
+    <button class="option" id="disableCloak" style="width: 150px;" onclick="changeTheme('light')" >Disable</button>
 </div>
 <div class="settingscontainer">
   <br>
@@ -105,7 +106,7 @@
   <p style="font-size:23px;">Customize your unblocker by choosing our themes. (Enable particles for effect)</p>
   <select id="dropdown" class="option" style="text-align: center;">
     <option disabled value="placeholder" selected>Select a theme</option>
-    <option href="javascript:void(0);" class="option" onclick="changeTheme('light')" style="color:black;">Dark (Default)</option>
+    <option href="javascript:void(0);" class="option" @_**Gamer Verse**  style="color:black;">Dark (Default)</option>
     <option href="javascript:void(0);" class="option" onclick="changeTheme('dark')" style="color:black;">Light</option>
   </select>
   <button onclick="window.location.reload()" class="option" style="width:90px;">Save</button>
