@@ -106,7 +106,7 @@
   <p style="font-size:23px;">Customize your unblocker by choosing our themes. (Enable particles for effect)</p>
   <select id="dropdown" class="option" style="text-align: center;">
     <option disabled value="placeholder" selected>Select a theme</option>
-    <option href="javascript:void(0);" class="option" @_**Gamer Verse**  style="color:black;">Dark (Default)</option>
+    <option class="option" id="disableCloak" style="color:black" onclick="changeTheme('light')">Dark (Default)</option>
     <option href="javascript:void(0);" class="option" onclick="changeTheme('dark')" style="color:black;">Light</option>
   </select>
   <button onclick="window.location.reload()" class="option" style="width:90px;">Save</button>
