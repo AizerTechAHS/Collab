@@ -115,7 +115,7 @@ var newIcon = storedIcon || defaultIcon;
   } else {
     // Tab is visible
     document.title = newTitle;
-    icon.setAttribute('href', storedIcon);
+    icon.setAttribute('https://proxy-server-8hdw.vercel.app/assets/img/', storedIcon);
   }
 });
   } else {
