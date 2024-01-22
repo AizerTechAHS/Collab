@@ -8,5 +8,7 @@ function updateTime() {
   var time = document.getElementById("time");
   time.innerHTML = currentTime;
 }
-
-setInterval(updateTime, 1000);
+window.onload = function() {   
+  updateTime();
+  setInterval(updateTime, 1000);
+};
