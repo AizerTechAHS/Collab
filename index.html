@@ -65,7 +65,7 @@
                 <h3>Info</h3>
                 <p></p>
                 <p>Time: <p id="time"></p></p>
-                <div id="offlineMessage">
+                <div id="offlineMessage" style="display: none;">
                   <span class="prompt">$</span>
                   <h1>You are currently offline</h1>
                   <p>Please check your internet connection and try again.</p>
@@ -123,9 +123,11 @@
         <script>
     document.addEventListener('DOMContentLoaded', function() {
       const offlineMessage = document.getElementById('offlineMessage');
-
+      
       // Function to update online status and show/hide the message
       function updateOnlineStatus() {
+        console.log(navigator.onLine);
+
         if (navigator.onLine) {
           offlineMessage.style.display = 'none'; // Online, hide the message
         } else {
