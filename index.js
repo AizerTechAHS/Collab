@@ -22,11 +22,8 @@ app.get('/app', (req, res) => {
 app.get('/student', (req, res) => {
   res.sendFile(path.join(process.cwd(), './static/loader.html'));
 });
-app.get('/apps', (req, res) => {
-  res.sendFile(path.join(process.cwd(), './static/apps.html'));
-});
 app.get('/gms', (req, res) => {
-  res.sendFile(path.join(process.cwd(), './static/game.html'));
+  res.sendFile(path.join(process.cwd(), './static/gms.html'));
 });
 app.get('/lessons', (req, res) => {
   res.sendFile(path.join(process.cwd(), './static/agloader.html'));
