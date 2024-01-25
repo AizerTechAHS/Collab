@@ -1,13 +1,12 @@
-function displayGameMenu(games) {
-    var game_menu = document.getElementById('games-menu');
+function displayGameMenu(elementDiv, games) {
+    var game_menu = document.getElementById(elementDiv);
 
     for (var i in games) {
         var embeded = `
          <div class="card" id="searchMessage" onclick="Link1('${games[i][2]}');">
             <img src="${games[i][1]}">
             <p class="work-content">${games[i][0]}</p>
-        </div>
-        `;
+        </div>`;
         
         game_menu.insertAdjacentHTML('beforeend', embeded);
     }
@@ -30,5 +29,5 @@ availableGames.sort(function(a, b) {
 });
 
 window.onload = function() {   
-    displayGameMenu(availableGames);
+    displayGameMenu('games-menu', availableGames);
 };
