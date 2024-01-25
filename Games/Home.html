@@ -74,12 +74,11 @@
               <br>
               <br>
               <center>
-                <div id="SearchBar">
-                  <input placeholder="Game Name" type="text" id="search">
-                  <i class="fa-solid fa-magnifying-glass fa-beat" style="color: #43da0b;"
-                    type="button"
-                    onclick="search(document.getElementById('search').value)"></i>
-                </div>
+                  <div class="search-bar" style="display: flex; justify-content: center;">
+                    <form id="searchForm" onsubmit="return false;" autocomplete="off">
+                      <input id="searchApps" placeholder="Search Apps" class="searchbar">
+                    </form>
+                  </div>
               </center>
               <br>
               <br>
