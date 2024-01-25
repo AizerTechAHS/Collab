@@ -17,6 +17,7 @@ function displayGameMenu(elementDiv, games) {
         }
         
         var embeded = `
+        <br>
         <div class="card" id="searchMessage" onclick="Link1('${games[i][2]}');">
             <img src="${img}">
             <p class="work-content">${name}</p>
