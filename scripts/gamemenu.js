@@ -26,7 +26,16 @@ function displayGameMenu(elementDiv, games) {
     }
 }
 
-var availableGames = [
+function filterGames() {
+    document.getElementById('games-menu').innerHTML = '';
+    var filterValue = document.getElementById('searchApps').value.toUpperCase();
+    let filteredGames = availableGames.filter(function(game){
+        return game[0].toUpperCase().indexOf(filterValue) > -1;
+    });
+    displayGameMenu('games-menu', filteredGames);
+}
+
+availableGames = [
     ['Smash Karts', 'Img/SmashKarts.png', 'https://smashkarts.io/'],
     ['Zombs Royale', 'Img/ZombsRoyale.png', 'https://zombsroyale.io/'],
     ['Kirka.io', 'Img/Kirka.png', 'https://kirka.io/'],
