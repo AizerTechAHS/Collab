@@ -3,16 +3,11 @@ function displayGameMenu(games) {
 
     for (var i in games) {
         var embeded = `
-    <div class="square_btn" onclick="Link1('${games[i][2]}');">
-      <img src="${games[i][1]}"><br>${games[i][0]}</img>
-    </div>
-        `;
-        /* Goes to embedded
-                <div class="card" onclick="Link1('${games[i][2]}');">
+         <div class="card" onclick="Link1('${games[i][2]}');">
             <img src="${games[i][1]}">
             <p class="work-content">${games[i][0]}</p>
         </div>
-        */
+        `;
         
         game_menu.insertAdjacentHTML('beforeend', embeded);
     }
