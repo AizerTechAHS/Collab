@@ -3,9 +3,9 @@ function displayGameMenu(games) {
 
     for (var i in games) {
         var embeded = `
-    <a href="#" class="square_btn" onclick="Link1('${games[i][2]}');">
+    <div class="square_btn" onclick="Link1('${games[i][2]}');">
       <img src="${games[i][1]}"><br>${games[i][0]}</img>
-    </a>
+    </div>
         `;
         /* Goes to embedded
                 <div class="card" onclick="Link1('${games[i][2]}');">
