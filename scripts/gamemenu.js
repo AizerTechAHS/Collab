@@ -3,7 +3,7 @@ function displayGameMenu(elementDiv, games) {
 
     for (var i in games) {
         var embeded = `
-         <div class="card" id="searchMessage" onclick="Link1('${games[i][2]}');">
+        <div class="card" id="searchMessage" onclick="Link1('${games[i][2]}');">
             <img src="${games[i][1]}">
             <p class="work-content">${games[i][0]}</p>
         </div>`;
