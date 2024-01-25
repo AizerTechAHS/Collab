@@ -36,7 +36,6 @@ var availableGames = [
     ['Test', '', ''],
     ['Shadow Browser', '', 'https://shadowshogun1.shogun.ca/'],
     ['Roblox', 'Img/Roblox.png', 'https://acb.caculatorgeo.one/demo'],
-    ['', '', '']
 ];
 
 availableGames.sort(function(a, b) {
