@@ -5,10 +5,11 @@ function updateTime() {
   const seconds = now.getSeconds().toString().padStart(2, "0");
 
   const currentTime = `${hours}:${minutes}:${seconds}`;
+  console.log(currentTime);
   var time = document.getElementById("time");
   time.innerHTML = currentTime;
 }
-window.onload = function() {   
+window.onload = function() {
   updateTime();
   setInterval(updateTime, 1000);
 };

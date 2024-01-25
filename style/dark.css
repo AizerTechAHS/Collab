@@ -83,7 +83,7 @@ a.nav-link{
 }
 
 #home .filter{
-	background: url('../Img/Electro.gif') no-repeat;
+	background: url('') no-repeat;
 	background-size: cover;
 	background-position:center;
     position: absolute;
