@@ -1,4 +1,6 @@
 function displayGameMenu(elementDiv, games) {
+    var img;
+    var name;
     var game_menu = document.getElementById(elementDiv);
 
     for (var i in games) {
@@ -7,11 +9,17 @@ function displayGameMenu(elementDiv, games) {
         } else {
             img = games[i][1];
         }
+
+        if (games[i][0] === '') {
+            name = 'Blank';
+        } else {
+            name = games[i][0];
+        }
         
         var embeded = `
         <div class="card" id="searchMessage" onclick="Link1('${games[i][2]}');">
             <img src="${img}">
-            <p class="work-content">${games[i][0]}</p>
+            <p class="work-content">${name}</p>
         </div>`;
         
         game_menu.insertAdjacentHTML('beforeend', embeded);
@@ -28,6 +36,7 @@ var availableGames = [
     ['Test', '', ''],
     ['Shadow Browser', '', 'https://shadowshogun1.shogun.ca/'],
     ['Roblox', 'Img/Roblox.png', 'https://acb.caculatorgeo.one/demo'],
+    ['', '', '']
 ];
 
 availableGames.sort(function(a, b) {
