@@ -14,17 +14,25 @@
     <link id="theme-stylesheet" rel="stylesheet" href="../style/dark.css">
     <link href="../style/buttons.css" rel="stylesheet" type="text/css" />
     <link href="../style/gameButtons.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+    <script
+      src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
     <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-    <script src="https://kit.fontawesome.com/d08ce418ca.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/d08ce418ca.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../scripts/script.js"></script>
     <script src="../scripts/gamemenu.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/script.js/2.0.2/script.min.js" integrity="sha512-UWtTDM6wtl/qutDD6i1JOGZGiEd92dveVzuLl8sMBkMHlOHcbZdexM7ZrKkeaugW7vhqDnWc2pPD/ohEV+BBbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://unpkg.com/movement.css/movement.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <style>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/script.js/2.0.2/script.min.js"
+      integrity="sha512-UWtTDM6wtl/qutDD6i1JOGZGiEd92dveVzuLl8sMBkMHlOHcbZdexM7ZrKkeaugW7vhqDnWc2pPD/ohEV+BBbg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/movement.css/movement.css" rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
     input {
       border-radius: 10px;
       margin: 20px;
@@ -72,37 +80,41 @@
                 <hr>
               </h3>
               <center>
-                  <div class="search-bar" style="display: flex; justify-content: center;">
-                    <form id="searchForm" onsubmit="return false;" autocomplete="off">
-                      <input id="searchApps" placeholder="Search Apps" class="searchbar" onkeyup="filterGames()">
-                    </form>
-                  </div>
+                <div class="search-bar"
+                  style="display: flex; justify-content: center;">
+                  <form id="searchForm" onsubmit="return false;"
+                    autocomplete="off">
+                    <input id="searchApps" placeholder="Search Apps"
+                      class="searchbar" onkeyup="filterGames()">
+                  </form>
+                </div>
               </center>
               <!-- GameBox -->
               <div id="Games">
-                <div class="search-results" style="display: flex; justify-content: center; flex-wrap: wrap;">
-                <h3>Games</h3>
+                <div class="search-results"
+                  style="display: flex; justify-content: center; flex-wrap: wrap;">
+                  <h3>Games</h3>
                   <br>
                 </div>
-                    <div id="Games">
-                <div class="work-box">
-                  <div class="work" id="games-menu">
-                  </div>
-                </div>
-                </div>
-              </div>
-                <!--Confirmation Button AKA "Confirm Launch?"-->
-                <div id="confirm" style="display:none;">
-                  <h2>Confirm Launch?</h2>
-                  <div>
-                    <button class="button" id="confirm-yes" onclick>Yes</button>
-                    <button class="button"
-                      onclick="document.getElementById('confirm').style.display = 'none'">No</button>
+                <div id="Games">
+                  <div class="work-box">
+                    <div class="work" id="games-menu">
+                    </div>
                   </div>
                 </div>
               </div>
-            </section>
-          </main>
-        </div>
-      </body>
-    </html>
+              <!--Confirmation Button AKA "Confirm Launch?"-->
+              <div id="confirm" style="display:none;">
+                <h2>Confirm Launch?</h2>
+                <div>
+                  <button class="button" id="confirm-yes" onclick>Yes</button>
+                  <button class="button"
+                    onclick="document.getElementById('confirm').style.display = 'none'">No</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </body>
+  </html>
