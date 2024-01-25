@@ -2,9 +2,15 @@ function displayGameMenu(elementDiv, games) {
     var game_menu = document.getElementById(elementDiv);
 
     for (var i in games) {
+        if (games[i][1] == '') {
+            img = 'Img/BlankImage.png';
+        } else {
+            img = games[i][1];
+        }
+        
         var embeded = `
         <div class="card" id="searchMessage" onclick="Link1('${games[i][2]}');">
-            <img src="${games[i][1]}">
+            <img src="${img}">
             <p class="work-content">${games[i][0]}</p>
         </div>`;
         
@@ -19,8 +25,8 @@ var availableGames = [
     ['1v1.lol', 'Img/1V1.png', 'https://1v1.lol/'],
     ['Diep.io', 'https://aizertechahs.github.io/Images/Diep.png', 'https://diep.io'],
     ['Defly.io', 'https://aizertechahs.github.io/Images/Defly.png', 'https://defly.io/'],
-    ['Test', 'Img/BlankImage.png', ''],
-    ['Shadow Browser', 'Img/BlankImage.png', 'https://shadowshogun1.shogun.ca/'],
+    ['Test', '', ''],
+    ['Shadow Browser', '', 'https://shadowshogun1.shogun.ca/'],
     ['Roblox', 'Img/Roblox.png', 'https://acb.caculatorgeo.one/demo'],
 ];
 
