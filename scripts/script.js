@@ -43,7 +43,7 @@ function Link1(url) {
       }
 
 function openSettings() {
-  location.href = './Settings';
+  location.href = 'https://aizertechahs.github.io/Goguardian-Bypasser/Settings';
 }
 var submenuOpen = false;
 var submenu2Open = false;
