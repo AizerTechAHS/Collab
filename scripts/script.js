@@ -43,7 +43,7 @@ function Link1(url) {
       }
 
 function openSettings() {
-  location.href = './Settings.html';
+  location.href = './Settings';
 }
 var submenuOpen = false;
 var submenu2Open = false;
