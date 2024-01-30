@@ -94,12 +94,6 @@
                       <button class="option button-container centered-button" id="cloak" onclick="classroomCloak()"><img src="https://www.gstatic.com/classroom/logo_square_rounded.svg" style="width:30px;height:30px;"></button>
                       <button class="option button-container centered-button" onclick="disableTabCloak()"><img src="/assets/img/none.jpg" style="width:30px;height:30px;"></button>
                   </div>
-                  <div class="settingscontainer">
-                    <br>
-                    <p style="font-weight: bold;">About:Blank Cloak</p>
-                    <p>Disguises the page in a about:blank link</p>
-                    <button class="option" onclick="openWindow()">Open Blanker</button>
-                  </div> 
                   -->
                 <div class="settingscontainer">
                   <br>
@@ -109,6 +103,12 @@
                     onclick="changeTheme('dark')">Dark</button>
                   <button class="option" id="disableCloak" style="width: 150px;"
                     onclick="changeTheme('light')">Light</button>
+                </div>
+                <div class="settingscontainer">
+                  <br>
+                    <p style="font-weight: bold;">Advanced About:Blank Cloak</p>
+                    <p>Opens blanker without leaving site on browser history.</p>
+                  <button class="option" style="width: 150px;" id="enableCloak" onclick="enableAboutBlank()">Enable</button><button class="option" id="disableCloak" style="width: 150px;" onclick="disableAboutBlank()">Disable</button>
                 </div>
                   <!--
                   <div class="settingscontainer">
