@@ -39,13 +39,6 @@
       <div class="context-menu-item" onclick="tabCloak()">Enable</div>
       <div class="context-menu-item" onclick="disableTabCloak()">Disable</div>
     </div>
-            <!--LATER FEAUTERE
-    <div class="context-menu-item with-submenu" onclick="toggleSubmenu2(event)"><i class="bi bi-shield-lock"></i> Authentication</div>
-    <div class="context-submenu">
-      <div class="context-menu-item" onclick="enableLogin()">Enable Login</div>
-      <div class="context-menu-item" onclick="disableLogin()">Disable Login</div>
-    </div>
-    -->
     <div class="context-menu-item" onclick="openWindow()"><i class="bi bi-box-arrow-up-right"></i> About:Blank Cloak</div>
     <div class="context-menu-item" onclick="openSettings()"><i class="bi bi-gear"></i> View all Settings</div>
   </div>
@@ -140,7 +133,51 @@
             </section>
           </main>
         </div>
+	  <script rel="preload" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
       <script src="scripts/script.js"></script>
+<!--FOR THEME-->
+	      <script>
+      // Check if Particles are enabled
+      var particles = localStorage.getItem('particles');
+      if (particles === 'disabled' || particles === null || particles === '') {
+        console.log('Particles are disabled.')
+      } else {
+       particlesJS("particles-js", {
+      "particles": {
+          "number": {
+              "value": 0,
+              "density": {
+                  "enable": true,
+                  "value_area": 800
+              }
+          },
+          "color": {
+              "value": "#32cf32"
+          },
+      },
+  });
+      }
+    </script>
+<script>
+  // Get the <select> element by its id
+  const dropdown = document.getElementById('dropdown');
+  
+  // Add an event listener to the <select> element
+  dropdown.addEventListener('change', function () {
+      // Get the selected option's value
+      const selectedOptionValue = dropdown.value;
+      
+      // Store the selected option's value in localStorage
+      localStorage.setItem('selectedOption', selectedOptionValue);
+  });
 
+  // Check if there's a previously selected option in localStorage
+  const storedOptionValue = localStorage.getItem('selectedOption');
+
+  if (storedOptionValue) {
+      // Set the selected option based on the stored value
+      dropdown.value = storedOptionValue;
+  }
+</script>
       </body>
     </html>
