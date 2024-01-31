@@ -1,112 +1,103 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Settings</title>
-    <link rel="icon" href="Img/Collab.png">
-    <script src="scripts/themeChanger.js"></script>
-    <script rel="preload" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!---------------------------->
-<script src="https://kit.fontawesome.com/323255fd4e.js" crossorigin="anonymous"></script>
-<link href="https://unpkg.com/movement.css/movement.css" rel="stylesheet">
-<link id="theme-stylesheet" rel="stylesheet" href="style/dark.css">
+<head>
+	<link href="https://unpkg.com/movement.css/movement.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/script.js/2.0.2/script.min.js"
+		integrity="sha512-UWtTDM6wtl/qutDD6i1JOGZGiEd92dveVzuLl8sMBkMHlOHcbZdexM7ZrKkeaugW7vhqDnWc2pPD/ohEV+BBbg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="scripts/script.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Settings</title>
+	<link rel="icon" href="Img/Collab.png">
+	<script src="scripts/themeChanger.js"></script>
+	<!---------------------------->
+	<link id="theme-stylesheet" rel="stylesheet" href="style/dark.css">
 	<link href="style/buttons.css" rel="stylesheet" type="text/css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/script.js/2.0.2/script.min.js" integrity="sha512-UWtTDM6wtl/qutDD6i1JOGZGiEd92dveVzuLl8sMBkMHlOHcbZdexM7ZrKkeaugW7vhqDnWc2pPD/ohEV+BBbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<<script src="scripts/script.js">
+		</script>
+		<link href="style/settings.css" rel="stylesheet" type="text/css" />
+		<script src="scripts/particles.js"></script>
+		<script src="https://kit.fontawesome.com/d08ce418ca.js" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script rel="preload" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
 
-  gtag('config', 'G-6YEQ7Q0XRC');
-</script>
-<script src="https://kit.fontawesome.com/323255fd4e.js" crossorigin="anonymous"></script>
-<link href="https://unpkg.com/movement.css/movement.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/script.js/2.0.2/script.min.js" integrity="sha512-UWtTDM6wtl/qutDD6i1JOGZGiEd92dveVzuLl8sMBkMHlOHcbZdexM7ZrKkeaugW7vhqDnWc2pPD/ohEV+BBbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<body>
+	<!--SUBMENU-->
+	<div id="contextMenu" class="context-menu">
+		<div class="context-menu-item with-submenu" onclick="toggleSubmenu(event)"><i class="bi bi-backpack"></i> Tab Cloak
+		</div>
+		<div class="context-submenu">
+			<div class="context-menu-item" onclick="tabCloak()">Enable</div>
+			<div class="context-menu-item" onclick="disableTabCloak()">Disable</div>
+		</div>
+		<div class="context-menu-item" onclick="openWindow()"><i class="bi bi-box-arrow-up-right"></i> About:Blank Cloak
+		</div>
+		<div class="context-menu-item" onclick="openSettings()"><i class="bi bi-gear"></i> View all Settings</div>
+	</div>
+	<!--END SUBMENU-->
+	<div id="particles-js"></div>
+	<div class="container">
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<header>
+			<a class="logo" href="#home">
+				<img src="Img/Collab.png" alt="Collab" />
+			</a>
+			<nav>
+				<ul class="nav-bar">
+					<div class="bg"></div>
+					<li><a class="nav-link" href="loader.html?func=Index"><i class="fa-solid fa-house fa-bounce"
+								style="color: #075ced;"></i>
+					<li><a class="nav-link" href="loader.html?func=About">About
+							Us</a></li>
+					<li><a class="nav-link" href="loader.html?func=Home">Games</a></li>
+					<li><a class="nav-link" href="loader.html?func=Settings">Settings</a></li>
+				</ul>
 
-  gtag('config', 'G-6YEQ7Q0XRC');
-</script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  </head>
-
-  <body>
-    <!--SUBMENU-->
-  <div id="contextMenu" class="context-menu">
-    <div class="context-menu-item with-submenu" onclick="toggleSubmenu(event)"><i class="bi bi-backpack"></i> Tab Cloak</div>
-    <div class="context-submenu">
-      <div class="context-menu-item" onclick="tabCloak()">Enable</div>
-      <div class="context-menu-item" onclick="disableTabCloak()">Disable</div>
-    </div>
-    <div class="context-menu-item" onclick="openWindow()"><i class="bi bi-box-arrow-up-right"></i> About:Blank Cloak</div>
-    <div class="context-menu-item" onclick="openSettings()"><i class="bi bi-gear"></i> View all Settings</div>
-  </div>
-    <!--END SUBMENU-->
-    <div class="container">
-      <script src="https://apis.google.com/js/platform.js" async defer></script>
-      <header>
-        <a class="logo" href="#home">
-          <img src="Img/Collab.png" alt="Collab" />
-        </a>
-        <nav>
-          <ul class="nav-bar"><div class="bg"></div>
-            <li><a class="nav-link" href="loader.html?func=Index"><i
-                  class="fa-solid fa-house fa-bounce"
-                  style="color: #075ced;"></i>
-                <li><a class="nav-link" href="loader.html?func=About">About
-                    Us</a></li>
-                <li><a class="nav-link"
-                    href="loader.html?func=Home">Games</a></li>
-                <li><a class="nav-link"
-                    href="loader.html?func=Settings">Settings</a></li>
-              </ul>
-
-              <div class="hamburger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-              </div>
-            </nav>
-          </header>
-          <main>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="filter"></div>
-            <section class="intro">
-              <h3>Settings
-                <hr>
-              </h3>
-              <div class="containers">
-                  <div class="settingscontainer">
-                    <br>
-                  <p style="font-weight: bold;">About:Blank Cloak</p>
-                  <p>Disguises the page in a about:blank link</p>
-                      <button class="option" onclick="openWindow()">Open Blanker</button>
-                      </div>
-                <div class="settingscontainer">
-                  <br>
-                  <p style="font-weight: bold;">Theme</p>
-                  <p>Choose your theme according to your likes.</p>
-                  <button class="option" style="width: 150px;" id="enableCloak"
-                    onclick="changeTheme('dark')">Dark</button>
-                  <button class="option" id="disableCloak" style="width: 150px;"
-                    onclick="changeTheme('light')">Light</button>
-                </div>
-                <div class="settingscontainer">
-                  <br>
-                    <p style="font-weight: bold;">Advanced About:Blank Cloak</p>
-                    <p>Opens blanker without leaving site on browser history.</p>
-                  <button class="option" style="width: 150px;" id="enableCloak" onclick="enableAboutBlank()">Enable</button><button class="option" id="disableCloak" style="width: 150px;" onclick="disableAboutBlank()">Disable</button>
-                </div>
+				<div class="hamburger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="filter"></div>
+			<section class="intro">
+				<h3>Settings
+					<hr>
+				</h3>
+				<div class="containers">
+					<div class="settingscontainer">
+						<br>
+						<p style="font-weight: bold;">About:Blank Cloak</p>
+						<p>Disguises the page in a about:blank link</p>
+						<button class="option" onclick="openWindow()">Open Blanker</button>
+					</div>
+					<div class="settingscontainer">
+						<br>
+						<p style="font-weight: bold;">Theme</p>
+						<p>Choose your theme according to your likes.</p>
+						<button class="option" style="width: 150px;" id="enableCloak" onclick="changeTheme('dark')">Dark</button>
+						<button class="option" id="disableCloak" style="width: 150px;" onclick="changeTheme('light')">Light</button>
+					</div>
+					<div class="settingscontainer">
+						<br>
+						<p style="font-weight: bold;">Advanced About:Blank Cloak</p>
+						<p>Opens blanker without leaving site on browser history.</p>
+						<button class="option" style="width: 150px;" id="enableCloak"
+							onclick="enableAboutBlank()">Enable</button><button class="option" id="disableCloak" style="width: 150px;"
+							onclick="disableAboutBlank()">Disable</button>
+					</div>
 					<div class="settingscontainer">
 						<br>
 						<p style="font-weight: bold;">Themes</p>
@@ -126,62 +117,22 @@
 						</select>
 						<button onclick="window.location.reload()" class="option" style="width:90px;">Save</button>
 					</div>
-<div class="settingscontainer">
-  <br>
-  <p style="font-weight: bold;">Particles</p>
-  <p style="font-size:19px;">This lets you enable or disable the particles effect for themes, in case they lag your computer.</p>
-<button style="width: 150px;" class="option" onclick="disableParticles()" id="disabledParticles">Enable</button><button class="option" style="width: 150px;" onclick="enableParticles()" id="enabledParticles">Disable</button>
-</div>
+				</div>
+			</section>
+		</main>
+	</div>
+  <script>
+    const dropdown = document.getElementById('dropdown');
+    dropdown.addEventListener('change', function () {
+        const selectedOptionValue = dropdown.value;
+        localStorage.setItem('selectedOption', selectedOptionValue);
+    });
+    const storedOptionValue = localStorage.getItem('selectedOption');
+    if (storedOptionValue) {
+        dropdown.value = storedOptionValue;
+    }
+  </script>
+	<script src="scripts/script.js"></script>
+</body>
 
-
-              </div>
-            </section>
-          </main>
-        </div>
-<script rel="preload" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="scripts/script.js"></script>
-    <script>
-      // Check if Particles are enabled
-      var particles = localStorage.getItem('particles');
-      if (particles === 'disabled' || particles === null || particles === '') {
-        console.log('Particles are disabled.')
-      } else {
-       particlesJS("particles-js", {
-      "particles": {
-          "number": {
-              "value": 0,
-              "density": {
-                  "enable": true,
-                  "value_area": 800
-              }
-          },
-          "color": {
-              "value": "#32cf32"
-          },
-      },
-  });
-      }
-    </script>
-<script>
-  // Get the <select> element by its id
-  const dropdown = document.getElementById('dropdown');
-  
-  // Add an event listener to the <select> element
-  dropdown.addEventListener('change', function () {
-      // Get the selected option's value
-      const selectedOptionValue = dropdown.value;
-      
-      // Store the selected option's value in localStorage
-      localStorage.setItem('selectedOption', selectedOptionValue);
-  });
-
-  // Check if there's a previously selected option in localStorage
-  const storedOptionValue = localStorage.getItem('selectedOption');
-
-  if (storedOptionValue) {
-      // Set the selected option based on the stored value
-      dropdown.value = storedOptionValue;
-  }
-</script>
-      </body>
-    </html>
+</html>
