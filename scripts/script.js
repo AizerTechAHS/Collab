@@ -1001,10 +1001,23 @@ document.body.style.backgroundRepeat = "no-repeat";
 document.body.style.backgroundSize = "cover";
 }
 
+var particlesEnabledButton = document.getElementById('enabledParticles');
+var particlesDisabledButton = document.getElementById('disabledParticles');
+
+var particless = localStorage.getItem('particles');
+
+if (particless === 'disabled' || particless === '' || particless === null) {
+    particlesDisabledButton.disabled = true;
+    particlesEnabledButton.disabled = false;
+} else {
+    particlesDisabledButton = false;
+    particlesEnabledButton.disabled = true;
+}
 function enableParticles () {
     localStorage.setItem('particles', 'enabled')
     window.location.reload();
 }
+
 function disableParticles () {
     localStorage.setItem('particles', 'disabled');
     window.location.reload();
