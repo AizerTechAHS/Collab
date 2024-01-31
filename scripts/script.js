@@ -1013,12 +1013,3 @@ if (particless === 'disabled' || particless === '' || particless === null) {
     particlesDisabledButton = false;
     particlesEnabledButton.disabled = true;
 }
-function enableParticles () {
-    localStorage.setItem('particles', 'enabled')
-    window.location.reload();
-}
-
-function disableParticles () {
-    localStorage.setItem('particles', 'disabled');
-    window.location.reload();
-}
