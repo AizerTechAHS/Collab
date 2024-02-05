@@ -19,6 +19,47 @@ function startGame(url) {
           window.onbeforeunload = function () {return false;}
       </script>
   </body>
+
+
+
+      <div id="options-container">
+        <button onclick="switchToMain()">Main</button>
+        <button onclick="openSettings()">Settings</button>
+    </div>
+    <script>
+        function switchToMain() {
+            // Logic to switch to the main option
+        }
+
+        function openSettings() {
+            // Logic to open settings
+        }
+    </script>
+    <style>
+
+        #options-container {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #3498db;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+        }
+
+        #options-container button {
+            margin: 0 10px;
+            padding: 5px 10px;
+            background-color: #2ecc71;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+
+    
   </html>`;
   
     var ggwindow = window.open("", "Loading...", "width=1920,height=1080");
