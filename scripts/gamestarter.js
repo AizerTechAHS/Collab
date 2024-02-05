@@ -42,7 +42,7 @@ function startGame(url) {
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            background-color: #3498db;
+            background-color: #0b0c0f;
             padding: 10px;
             border-radius: 10px 10px 0 0;
             box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
@@ -51,10 +51,10 @@ function startGame(url) {
         #options-container button {
             margin: 0 10px;
             padding: 5px 10px;
-            background-color: #2ecc71;
+            background-color: #22ff00;
             border: none;
             border-radius: 5px;
-            color: #fff;
+            color: #3a3b3a;
             cursor: pointer;
         }
     </style>
