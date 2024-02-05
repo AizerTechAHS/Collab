@@ -23,16 +23,16 @@ function startGame(url) {
 
 
       <div id="options-container">
-        <button onclick="switchToMain()">Main</button>
+        <button onclick="switchToMain()">Games</button>
         <button onclick="openSettings()">Settings</button>
     </div>
     <script>
-        function switchToMain() {
-            // Logic to switch to the main option
+        function switchToGames() {
+  location.href = "https://aizertechahs.github.io/Goguardian-Bypasser/Home";
         }
 
         function openSettings() {
-            // Logic to open settings
+  location.href = "https://aizertechahs.github.io/Goguardian-Bypasser/Settings";
         }
     </script>
     <style>
