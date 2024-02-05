@@ -52,6 +52,7 @@ availableGames = [
     ['Diep.io', 'https://aizertechahs.github.io/Images/Diep.png', 'https://diep.io'],
     ['Defly.io', 'https://aizertechahs.github.io/Images/Defly.png', 'https://defly.io/'],
     ['Test', '', ''],
+    ['Tough Love', 'Img/ToughLove.png', 'https://toughlovearena.com/'],
     ['Shadow Browser', '', 'https://shadowshogun1.shogun.ca/'],
     ['Roblox', 'Img/Roblox.png', 'https://acb.caculatorgeo.one/demo'],
 ];
