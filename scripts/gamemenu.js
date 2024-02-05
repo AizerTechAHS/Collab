@@ -5,6 +5,12 @@ function displayGameMenu(elementDiv, games) {
     var game_menu = document.getElementById(elementDiv);
 
     for (var i in games) {
+        if (games[i][0] === '') {
+            name = 'Blank';
+        } else {
+            name = games[i][0];
+        }
+
         if (games[i][1] == '') {
             img = 'Img/BlankImage.png';
         } else {
@@ -16,12 +22,6 @@ function displayGameMenu(elementDiv, games) {
 
         } else {
             gameLink = `Link1('${games[i][2]}')`;
-        }
-
-        if (games[i][0] === '') {
-            name = 'Blank';
-        } else {
-            name = games[i][0];
         }
         
         var embeded = `
