@@ -23,7 +23,7 @@ function startGame(url) {
 
 
       <div id="options-container">
-        <button onclick="switchToMain()">Games</button>
+        <button onclick="switchToGames()">Games</button>
         <button onclick="openSettings()">Settings</button>
     </div>
     <script>
