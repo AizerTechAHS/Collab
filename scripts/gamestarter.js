@@ -50,7 +50,7 @@ function startGame(url) {
         #options-container button {
             margin: 0 10px;
             padding: 5px 10px;
-            background-color: #22ff00;
+            background-color: rgba(0, 255, 0, 0.5)
             border: none;
             border-radius: 5px;
             color: #3a3b3a;
