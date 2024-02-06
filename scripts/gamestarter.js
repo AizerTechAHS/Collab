@@ -42,10 +42,9 @@ function startGame(url) {
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            background-color: #0b0c0f;
+            background-color: rgba(0, 0, 0, 0.5);
             padding: 10px;
             border-radius: 10px 10px 0 0;
-            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
         }
 
         #options-container button {
