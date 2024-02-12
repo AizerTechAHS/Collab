@@ -52,6 +52,7 @@ availableGames = [
     ['Diep.io', 'https://aizertechahs.github.io/Images/Diep.png', 'https://diep.io'],
     ['Defly.io', 'https://aizertechahs.github.io/Images/Defly.png', 'https://defly.io/'],
     ['Test', '', ''],
+    {'City Car Simulator', 'Img/CityCar.png', 'https://games.crazygames.com/en_US/city-car-driving-simulator-ultimate/index.html?v=1.267'},
     ['Shadow Browser', '', 'https://shadowshogun1.shogun.ca/'],
     ['Roblox', 'Img/Roblox.png', 'https://acb.caculatorgeo.one/demo'],
 ];
