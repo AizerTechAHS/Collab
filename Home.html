@@ -130,15 +130,37 @@
                 </div>
                 <!--KIRKA SERVER OPENER-->
                 
-<select id="folderSelect" onchange="updateLink()">
-  <option value="NA">North America</option>
-  <option value="OCEANIA">Oceania</option>
-  <option value="folder3">South America</option>
-  <option value="folder4">Unnamed</option>
-</select>
-<input type="text" id="userInput" placeholder="Enter your text here" oninput="updateLink()">
-<button onclick="openUrl()">Open Server</button>
-<p>Link: <a id="linkDisplay" href="#" target="_blank">Link will appear here...</a></p>
+
+                <div class="arrow">Private Servers Kirka.io ▼</div>
+                <div class="content">
+                <select id="folderSelect" onchange="updateLink()">
+                  <option value="NA">North America</option>
+                  <option value="OCEANIA">Oceania</option>
+                  <option value="folder3">South America</option>
+                  <option value="folder4">Unnamed</option>
+                </select>
+                <input type="text" id="userInput" placeholder="Enter your text here" oninput="updateLink()">
+                <button onclick="openUrl()">Open Server</button>
+                <p>Link: <a id="linkDisplay" href="#" target="_blank">Link will appear here...</a></p>                </div>
+
+                <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                  const arrow = document.querySelector('.arrow');
+                  const content = document.querySelector('.content');
+
+                  arrow.addEventListener('click', function() {
+                    if (content.style.display === 'none') {
+                      content.style.display = 'block';
+                      arrow.textContent = 'Private Servers Kirka.io ▲';
+                    } else {
+                      content.style.display = 'none';
+                      arrow.textContent = 'Private Servers Kirka.io ▼';
+                    }
+                  });
+                });
+                </script>
+
+                
                 <!-- END OF KIRKA SERVER OPENER -->
               </div>
               <!--Confirmation Button AKA "Confirm Launch?"-->
