@@ -11,9 +11,18 @@
     <title>Games</title>
     <link rel="icon" href="Img/Collab.png">
     <script src="scripts/themeChanger.js"></script>
+    <script src="scripts/kirkadropdown.js"></script>
     <script src="scripts/kirkaserver.js"></script>
     <script src="scripts/popup.js"></script>
     <!---------------------------->
+    <style>
+      .arrow {
+        cursor: pointer;
+      }
+      .content {
+        display: none;
+      }
+    </style>
     <link href="style/settings.css" rel="stylesheet" type="text/css" />
     <link id="theme-stylesheet" rel="stylesheet" href="style/dark.css">
     <link href="style/buttons.css" rel="stylesheet" type="text/css" />
@@ -131,7 +140,7 @@
                 </div>                
 
     <div id="KirkaServers">
-      <h3>Kirka Private Server</h3>
+      <h3 class="arrow">Kirka Private Server ▼</h3>
                 <div class="content">
                 <select id="folderSelect" onchange="updateLink()">
                   <option value="NA">North America</option>
@@ -143,10 +152,28 @@
                 <button onclick="openUrl()">Open Server</button>
                 <p>Link: <a id="linkDisplay" href="#" target="_blank">Link will appear here...</a></p>
                 </div>
+
+                <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                  const arrow = document.querySelector('.arrow');
+                  const content = document.querySelector('.content');
+
+                  arrow.addEventListener('click', function() {
+                    if (content.style.display === 'none') {
+                      content.style.display = 'block';
+                      arrow.textContent = 'Private Servers Kirka.io ▲';
+                    } else {
+                      content.style.display = 'none';
+                      arrow.textContent = 'Private Servers Kirka.io ▼';
+                    }
+                  });
+                });
+                </script>
                   
                 </div>
                 <div>
               </div>
+                
               <!--Confirmation Button AKA "Confirm Launch?"-->
               <div id="confirm" style="display:none;">
                 <h2>Confirm Launch?</h2>
