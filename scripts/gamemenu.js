@@ -52,6 +52,7 @@ availableGames = [
     ['Diep.io', 'https://aizertechahs.github.io/Images/Diep.png', 'https://diep.io'],
     ['Defly.io', 'https://aizertechahs.github.io/Images/Defly.png', 'https://defly.io/'],
     ['Test', '', ''],
+    ['Potty Racers', 'Img/PottyRacers.png', 'https://games.crazygames.com/en_US/potty-racers/index.html?v=1.269'],
     ['Slither.io', 'Img/Slither.png', 'http://slither.io/'],
     ['City Car Simulator', 'Img/CityCar.png', 'https://games.crazygames.com/en_US/city-car-driving-simulator-ultimate/index.html?v=1.267'],
     ['Shadow Browser', '', 'https://shadowshogun1.shogun.ca/'],
