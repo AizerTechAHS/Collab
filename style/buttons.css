@@ -22,7 +22,7 @@ color: red;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: purple;
+    background-color: rgba(255, 255, 255, 0.144);
     text-align: center;
     padding: 5px;
 }
