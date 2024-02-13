@@ -41,6 +41,11 @@ header:hover{
 	height: 50px;
 	cursor: pointer;
 }
+.title {
+	padding-top: 5px;
+	height: 50px;
+	cursor: pointer;
+}
 
 .nav-bar{
 	list-style:none;
@@ -390,6 +395,11 @@ hr {
 		background-color: var(--main-header-background);
 	}
 	.logo{
+		position:absolute;
+		top: 2px;
+		left: 30px;
+	}
+	.title{
 		position:absolute;
 		top: 2px;
 		left: 30px;
