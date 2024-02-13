@@ -22,6 +22,12 @@
       .content {
         display: none;
       }
+      .arrow1 {
+        cursor: pointer;
+      }
+      .content1 {
+        display: none;
+      }
     </style>
     <link href="style/settings.css" rel="stylesheet" type="text/css" />
     <link id="theme-stylesheet" rel="stylesheet" href="style/dark.css">
@@ -187,10 +193,10 @@
                   arrow1.addEventListener('click', function() {
                     if (content1.style.display === 'none') {
                       content1.style.display = 'block';
-                      arrow1.textContent = 'Kirka Private Server  ▲';
+                      arrow1.textContent = 'Open Iframe ▲';
                     } else {
                       content1.style.display = 'none';
-                      arrow1.textContent = 'Kirka Private Server  ▼';
+                      arrow1.textContent = 'Open Iframe ▼';
                     }
                   });
                 });
