@@ -155,6 +155,12 @@
                   <p><mark>PS: Open the game here and paste the join code on zulip</mark></p>
                 </div>
 
+      <h3 class="arrow1">Iframe Opener</h3>
+                <div class="content">
+                <input type="text" id="userInput1" placeholder="Input End Of ID" oninput="updateLink1()">
+                <button onclick="openUrl1()" class="option" >Open Server</button>
+                </div>
+
                 <script>
                 document.addEventListener("DOMContentLoaded", function() {
                   const arrow = document.querySelector('.arrow');
@@ -167,6 +173,21 @@
                     } else {
                       content.style.display = 'none';
                       arrow.textContent = 'Kirka Private Server  ▼';
+                    }
+                  });
+                });
+
+                document.addEventListener("DOMContentLoaded", function() {
+                  const arrow1 = document.querySelector('.arrow1');
+                  const content1 = document.querySelector('.content1');
+
+                  arrow1.addEventListener('click', function() {
+                    if (content1.style.display === 'none') {
+                      content1.style.display = 'block';
+                      arrow1.textContent = 'Kirka Private Server  ▲';
+                    } else {
+                      content1.style.display = 'none';
+                      arrow1.textContent = 'Kirka Private Server  ▼';
                     }
                   });
                 });
