@@ -154,12 +154,16 @@
                   <p>Get the end of link of a kirka game. <br> EXAMPLE: https://kirka.io/games/NA~<mark>UhffIg-ex</mark><br>Get the following information and paste it here, it's recommended to copy and paste the code, that's due that the user sometimes puts the code wrong, unlike copy & paste<br> If you don't get this, look at <mark>Link:</mark> and you will now what the link is, when done, press Open Server to open.</mark></p>
                   <p><mark>PS: Open the game here and paste the join code on zulip</mark></p>
                 </div>
-
-      <h3 class="arrow1">Iframe Opener</h3>
+	    
+    <div id="KirkaServers">
+      <h3 class="arrow">Open Iframe ▼</h3>
                 <div class="content">
-                <input type="text" id="userInput1" placeholder="Input End Of ID" oninput="updateLink1()">
-                <button onclick="openUrl1()" class="option" >Open Server</button>
+                <input type="text" id="userInput" placeholder="Input End Of ID" oninput="updateLink()">
+                <button onclick="openUrl()" class="option" >Open Iframe</button>
+                <p>Link: <a id="linkDisplay" href="#" target="_blank">Link will appear here...</a></p>
                 </div>
+
+
 
                 <script>
                 document.addEventListener("DOMContentLoaded", function() {
