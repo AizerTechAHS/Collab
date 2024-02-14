@@ -60,7 +60,7 @@ function anotherFunction(url) {
     console.log("URL: " + url);
   if ($("#activityCloak").is(":checked")) {
     var url = $("#cloakurl").val() || "http://classroom.google.com";
-    var clasroomwindow = window.open(kirkaUrl, "ActivityCloakWindow");
+    var clasroomwindow = window.open(url, "ActivityCloakWindow");
   }
 
   var blankData = `<!DOCTYPE html>
