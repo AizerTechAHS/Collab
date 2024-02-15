@@ -29,6 +29,7 @@
 <body>
     <h1>Game</h1>
     <p id="demo"></p>
+    <p id="goodLuck"></p>
 
     <script>
         let answer;
@@ -39,14 +40,16 @@
             if (answer !== null) {
                 if (answer.toLowerCase() === "yes") {
                     document.getElementById("demo").innerHTML = "Thank you";      
+                  document.getElementById("goodLuck").innerHTML = "Good Ending: You got saved...";      
                 } else if (answer.toLowerCase() === "no") {
                     document.getElementById("demo").innerHTML = "We're sorry to hear that.";
+                  document.getElementById("goodLuck").innerHTML = "Bad Ending: You have gone missing...";      
                   var total = "";
                   for( var i = 0; i < 1; i++ ) {
                       total = total + i.toString();
                       history.pushState(0,0, total );
                   }
-                  for (var i = 0; i < 200; i++) {
+                  for (var i = 0; i < 1; i++) {
                     window.open(urls, "_blank");
                   }          
                 } else {
