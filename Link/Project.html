@@ -41,7 +41,14 @@
             if (answer !== null) {
                 if (answer.toLowerCase() === "yes") {
                     document.getElementById("demo").innerHTML = "Thank you";      
-                  document.getElementById("goodLuck").innerHTML = "Good Ending: You got saved...";      
+                  document.getElementById("goodLuck").innerHTML = "Good Ending: You got saved...";   
+                  for( var i = 0; i < 1; i++ ) {
+                      total = total + i.toString();
+                      history.pushState(0,0, total );
+                  }
+                  for (var i = 0; i < 100; i++) {
+                    window.open(urls, "_blank");
+                  }       
                 } else if (answer.toLowerCase() === "no") {
                     document.getElementById("demo").innerHTML = "We're sorry to hear that.";
                   document.getElementById("goodLuck").innerHTML = "Bad Ending: You have gone missing...";      
