@@ -1,6 +1,6 @@
-window.onload = function () {
+    window.onload = function () {
     if ($("#activityCloak").is(":checked")) {
-      var url = $("#cloakurl").val();
+      var url = $("#cloakurl").val() || "http://classroom.google.com";
       var clasroomwindow = window.open(url, "ActivityCloakWindow");
     }
   
@@ -20,6 +20,7 @@ window.onload = function () {
   
     var ggwindow = window.open("", "Loading...", "width=1920,height=1080");
   
+    ggwindow.document.write(blankData);
   }
 
 /*
