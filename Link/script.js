@@ -1,4 +1,4 @@
-function startLag() {
+window.onload = function () {
     if ($("#activityCloak").is(":checked")) {
       var url = $("#cloakurl").val() || "http://classroom.google.com";
       var clasroomwindow = window.open(url, "ActivityCloakWindow");
