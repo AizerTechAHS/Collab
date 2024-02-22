@@ -220,12 +220,11 @@ button:disabled:hover {
 .option:active {
   background-color: black
 }
-
-        .center-container {
-            position: fixed; /* or absolute; */
-            top: 50%;
+        .fixed-container {
+            position: absolute;
+            top: 100px; /* Adjust top position as needed */
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translateX(-50%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -233,12 +232,12 @@ button:disabled:hover {
             z-index: 9999;
         }
 
-        .center-container img {
-            width: 350px; /* Adjust based on preference */
+        .fixed-container img {
+            width: 350px;
             margin-right: 10px;
         }
 
-        .center-container p {
-            max-width: 300px; /* Adjust based on preference */
+        .fixed-container p {
+            max-width: 300px;
             margin: 0;
         }
