@@ -1,4 +1,4 @@
-const bannerText = document.querySelector(".banner-home p p");
+const bannerText = document.querySelector(".banner-home h4 h4");
 const bannerTextOptions = [
     ["games", "blue"],
     ["tools", "orange"],
