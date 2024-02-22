@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="style/settings.css">
     <script src="scripts/clock.js"></script>
     <script src="scripts/popup.js"></script>
-    <script src="scripts/main.js"></script>
   </head>
   <body>
     <!--SUBMENU-->
@@ -79,14 +78,7 @@
                 <h3>Unnamed<hr></h3>
                 <br>
                 <h3>Info</h3>
-                <p></p>
                 <p>Time: <p id="time"></p></p>
- 			 <div class="banner-home">
-				 <center>
-    				  <span>Centralize your <span style="color: #9B0022">everything</span></span>
- 				 </center>
- 			 </div>
-		      <script src="scripts/main.js"></script>
 		<p>https://aizertechahs.github.io/Goguardian-Bypasser/Link/Project</p>
                 <div id="offlineMessage" style="display: none;">
                   <span class="prompt">$</span>
@@ -95,7 +87,12 @@
                   <button onclick="retryConnection()">Retry</button>
                 </div>
                 <br><p>more</p>
-
+ 			 <div class="banner-home">
+				 <center>
+    				  <span>Centralize your <span style="color: #9B0022">everything</span></span>
+ 				 </center>
+ 			 </div>
+		      <script src="scripts/main.js"></script>
                 <!--──────────────Contact────────────────-->
                 <div class="social-media">
 
@@ -164,47 +161,6 @@
       location.reload(); // Reload the page
     }
   </script>
-	<script>
-const bannerText = document.querySelector(".banner-home span span");
-const bannerTextOptions = [
-    ["games", "blue"],
-    ["tools", "orange"],
-    ["everything", "#9B0022"]
-]
-
-var tick = 0;
-var currentItem = 0;
-var removingText = true;
-var currentLetter = 0;
-
-function bannerTextEdit() {
-    console.log(tick)
-    if (removingText == false && tick == 9) {
-        bannerText.innerText += bannerTextOptions[currentItem][0][currentLetter];
-        bannerText.style.color = bannerTextOptions[currentItem][1];
-        currentLetter++
-
-        if (bannerText.innerText.length == bannerTextOptions[currentItem][0].length) {
-            removingText = true;
-            tick = 0;
-            currentItem++;
-            if (currentItem >= bannerTextOptions.length) {
-                currentItem = 0;
-            }
-        }
-    } else if (tick == 9 && removingText == true) {
-        bannerText.innerText = bannerText.innerText.slice(0, -1);
-        if (bannerText.innerText.length == 0) {
-            removingText = false;
-            currentLetter = 0;
-        }
-    } else {
-        tick++
-    }
-}
-
-setInterval(bannerTextEdit, 200)
-	</script>
       </html>
 <script src="scripts/script.js"></script>
 <!--Chat HTML is below-->
