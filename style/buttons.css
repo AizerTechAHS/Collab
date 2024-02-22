@@ -220,3 +220,25 @@ button:disabled:hover {
 .option:active {
   background-color: black
 }
+
+        .center-container {
+            position: fixed; /* or absolute; */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            z-index: 9999;
+        }
+
+        .center-container img {
+            width: 350px; /* Adjust based on preference */
+            margin-right: 10px;
+        }
+
+        .center-container p {
+            max-width: 300px; /* Adjust based on preference */
+            margin: 0;
+        }
