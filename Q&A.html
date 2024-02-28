@@ -15,11 +15,46 @@
     <link href="style/buttons.css" rel="stylesheet" type="text/css" />
     <script src="scripts/themeChanger.js"></script>
     <script rel="preload" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style/questions.css" />
   </head>
   <body>
     <div id="particles-js"></div>
+	<!--SUBMENU-->
+	<div id="contextMenu" class="context-menu">
+		<div class="context-menu-item with-submenu" onclick="toggleSubmenu(event)"><i class="bi bi-backpack"></i> Tab Cloak
+		</div>
+		<div class="context-submenu">
+			<div class="context-menu-item" onclick="tabCloak()">Enable</div>
+			<div class="context-menu-item" onclick="disableTabCloak()">Disable</div>
+		</div>
+		<div class="context-menu-item" onclick="openWindow()"><i class="bi bi-box-arrow-up-right"></i> About:Blank Cloak
+		</div>
+		<div class="context-menu-item" onclick="openSettings()"><i class="bi bi-gear"></i> View all Settings</div>
+	</div>
+	<!--END SUBMENU-->
+    		<header>
+			<a class="logo" href="#home">
+				<img src="Img/Collab.png" alt="Collab" />
+			</a>
+			<nav>
+				<ul class="nav-bar">
+					<div class="bg"></div>
+					<li><a class="nav-link" href="loader.html?func=Index"><i class="fa-solid fa-house fa-bounce"
+								style="color: #075ced;"></i>
+					<li><a class="nav-link" href="loader.html?func=About">About
+							Us</a></li>
+					<li><a class="nav-link" href="loader.html?func=Home">Games</a></li>
+					<li><a class="nav-link" href="loader.html?func=Settings">Settings</a></li>
+				</ul>
 
+				<div class="hamburger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+			</nav>
+		</header>
       <section class="questions">
         <!-- title -->
         <div class="title">
