@@ -78,12 +78,12 @@
     'About': 'About',
     'Index': indexUrl,
     'Settings': 'Settings',
-    'Q&A': 'Q&A',
+    'Questions' : 'Q&A'
     // Add more functions
   };
 
   setTimeout(function() {
-    const targetLink = functionLinks[func] || 'default.html';
+    const targetLink = functionLinks[func] || 'indexUrl';
     window.location.href = targetLink;
   }, 0); // 5000 milliseconds (5 seconds)
 </script>
