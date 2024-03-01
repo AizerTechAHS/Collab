@@ -855,6 +855,7 @@ if (selectedTheme === "ocean") {
   document.body.style.backgroundPosition = "center";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
+  document.body.style.color = "#FFFFFF";
 } else if (selectedTheme === "obama") {
   particlesJS("particles-js", {
     particles: {
