@@ -15,7 +15,7 @@ window.onload = function() {
   // This is very IMPORTANT!! We're going to use "db" a lot.
   var db = firebase.database()
   // We're going to use oBjEcT OrIeNtEd PrOgRaMmInG. Lol
-  class MEME_CHAT{
+  class AIZER_CHAT{
     // Home() is used to create the home page
     home(){
       // First clear the body before adding in
@@ -39,15 +39,13 @@ window.onload = function() {
 
       var title = document.createElement('h1')
       title.setAttribute('id', 'title')
-      title.textContent = 'MemeChat 2.0'
+      title.textContent = 'Aizer Tech Chat Room'
 
       title_inner_container.append(title)
       title_container.append(title_inner_container)
       document.body.append(title_container)
     }
-    // create_join_form() creates the join form
     create_join_form(){
-      // YOU MUST HAVE (PARENT = THIS). OR NOT. I'M NOT YOUR BOSS!😂
       var parent = this;
 
       var join_container = document.createElement('div')
@@ -68,7 +66,7 @@ window.onload = function() {
       var join_input = document.createElement('input')
       join_input.setAttribute('id', 'join_input')
       join_input.setAttribute('maxlength', 15)
-      join_input.placeholder = 'No.... It\'s Patrick Star'
+      join_input.placeholder = 'Input Your Name'
       // Every time we type into the join_input
       join_input.onkeyup  = function(){
         // If the input we have is longer that 0 letters
@@ -83,7 +81,6 @@ window.onload = function() {
             // Remove the join_container. So the site doesn't look weird.
             join_container.remove()
             // parent = this. But it is not the join_button
-            // It is (MEME_CHAT = this).
             parent.create_chat()
           }
         }else{
@@ -123,7 +120,6 @@ window.onload = function() {
     create_chat(){
       // Again! You need to have (parent = this)
       var parent = this;
-      // GET THAT MEMECHAT HEADER OUTTA HERE
       var title_container = document.getElementById('title_container')
       var title = document.getElementById('title')
       title_container.classList.add('chat_title_container')
@@ -253,11 +249,6 @@ window.onload = function() {
         if(messages_object.numChildren() == 0){
           return
         }
-
-        // OK! SO IF YOU'RE A ROOKIE CODER. THIS IS GOING TO BE
-        // SUPER EASY-ISH! I THINK. MAYBE NOT. WE'LL SEE!
-
-        // convert the message object values to an array.
         var messages = Object.values(messages_object.val());
         var guide = [] // this will be our guide to organizing the messages
         var unordered = [] // unordered messages
@@ -286,7 +277,6 @@ window.onload = function() {
           })
         })
 
-        // Now we're done. Simply display the ordered messages
         ordered.forEach(function(data) {
           var name = data.name
           var message = data.message
@@ -324,11 +314,7 @@ window.onload = function() {
 
     }
   }
-  // So we've "built" our app. Let's make it work!!
-  var app = new MEME_CHAT()
-  // If we have a name stored in localStorage.
-  // Then use that name. Otherwise , if not.
-  // Go to home.
+  var app = new AIZER_CHAT()
   if(app.get_name() != null){
     app.chat()
   }
