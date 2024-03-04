@@ -50,11 +50,11 @@ function openUrl() {
 
 
 
-
+function iframeOpener() {
 document.getElementById('checkButton').addEventListener('click', function() {
     var url = document.getElementById('urlInput').value;
     anotherFunction(url);
-});
+});}
 
 function anotherFunction(url) {
     console.log("URL: " + url);
