@@ -23,4 +23,13 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('greenBtn').addEventListener('click', function () {
         setTextColor('green');
     });
+    
+    document.getElementById('whiteBtn').addEventListener('click', function () {
+        setTextColor('white');
+    });
+    
+    document.getElementById('blackBtn').addEventListener('click', function () {
+        setTextColor('black');
+    });
+    
 });
