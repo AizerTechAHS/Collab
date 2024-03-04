@@ -111,11 +111,16 @@
 					</div>
 					<div class="settingscontainer">
 						<p style="font-weight: bold;">Text Color</p>
+						<div class="dropdown">
+ 							 <button onclick="toggleDropdown()" style="padding: 12px 16px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">Colors</button>
+  							<div class="dropdown-content" id="dropdownContent">
   							  <button class="option" id="redBtn">Red</button>
   							  <button class="option" id="blueBtn">Blue</button>
    							  <button class="option" id="greenBtn">Green</button>
    							  <button class="option" id="whiteBtn">White</button>
 							  <button class="option" id="blackBtn">Black</button>
+							  </div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -132,6 +137,51 @@
         dropdown.value = storedOptionValue;
     }
   </script>
+<script>
+function toggleDropdown() {
+  var dropdownContent = document.getElementById("dropdownContent");
+  if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
+    dropdownContent.style.display = "block";
+  } else {
+    dropdownContent.style.display = "none";
+  }
+}
+</script>
+<style>
+	.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.dropdown-content button {
+  color: #333;
+  padding: 12px 16px;
+  text-align: left;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content button:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
 	<script src="scripts/script.js"></script>
 	<script src="scripts/mobile.js"></script>
 </body>
