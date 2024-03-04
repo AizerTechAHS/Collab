@@ -58,7 +58,7 @@ availableGames = [
     ['Shadow Browser', '', 'https://shadowshogun1.shogun.ca/'],
     ['Roblox', 'Img/Roblox.png', 'https://acb.caculatorgeo.one/demo'],
     ['FNF B Side Remixes', 'Img/fnf-b-side-remix.png', 'https://tbg95.github.io/fnf-b-sides-remixes/game.html'],
-    ['Neal Fun Infinite Craft', 'Img/NealFun.png', 'https://neal.fun/infinite-craft/'],
+    ['Infinite Craft', 'Img/NealFun.png', 'https://neal.fun/infinite-craft/'],
 ];
 
 availableGames.sort(function(a, b) {
