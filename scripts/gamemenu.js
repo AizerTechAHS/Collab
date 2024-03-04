@@ -57,7 +57,7 @@ availableGames = [
     ['City Car Simulator', 'Img/CityCar.png', 'https://games.crazygames.com/en_US/city-car-driving-simulator-ultimate/index.html?v=1.267'],
     ['Shadow Browser', '', 'https://shadowshogun1.shogun.ca/'],
     ['Roblox', 'Img/Roblox.png', 'https://acb.caculatorgeo.one/demo'],
-    ['FNF B Side Remixes', 'Img/fnf-b-side-remix.png', 'https://tbg95.github.io/fnf-b-sides-remixes/game.html'],
+    ['FNF B Side', 'Img/fnf-b-side-remix.png', 'https://tbg95.github.io/fnf-b-sides-remixes/game.html'],
     ['Infinite Craft', 'Img/NealFun.png', 'https://neal.fun/infinite-craft/'],
 ];
 
