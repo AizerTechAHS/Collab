@@ -1,3 +1,4 @@
+/*
 function changeTheme(theme){
     localStorage.setItem('currentTheme', theme)
     var colorTheme;
@@ -38,3 +39,4 @@ const storedTheme = localStorage.getItem('currentTheme');
 if (storedTheme) {
     changeTheme(localStorage.getItem('currentTheme'));
 }
+*/
