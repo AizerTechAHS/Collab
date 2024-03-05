@@ -12,7 +12,7 @@ function openWindow() {
 }
 
 function openSettings() {
-  location.href = "https://aizertechahs.github.io/Goguardian-Bypasser/Settings";
+  location.href = "https://aizertechahs.github.io/Collab/Settings";
 }
 var submenuOpen = false;
 var submenu2Open = false;
