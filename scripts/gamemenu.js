@@ -46,6 +46,7 @@ function filterGames() {
 
 availableGames = [
     ['Smash Karts', 'Img/SmashKarts.png', 'https://smashkarts.io/'],
+    ['Tag', 'Img/Tag.png', 'https://just-fall.github.io/j0/tag'],
     ['Zombs Royale', 'Img/ZombsRoyale.png', 'https://zombsroyale.io/'],
     ['Kirka.io', 'Img/Kirka.png', 'https://kirka.io/'],
     ['1v1.lol', 'Img/1V1.png', 'https://1v1.lol/'],
