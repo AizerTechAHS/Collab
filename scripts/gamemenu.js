@@ -60,6 +60,7 @@ availableGames = [
     ['Roblox', 'Img/Roblox.png', 'https://acb.caculatorgeo.one/demo'],
     ['FNF B Side', 'Img/fnf-b-side-remix.png', 'https://tbg95.github.io/fnf-b-sides-remixes/game.html'],
     ['Infinite Craft', 'Img/NealFun.png', 'https://neal.fun/infinite-craft/'],
+    ['Slow Roads', 'Img/SlowRoads.png', 'https://slowroads.io/'],
 ];
 
 availableGames.sort(function(a, b) {
