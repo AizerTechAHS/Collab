@@ -61,6 +61,8 @@ availableGames = [
     ['FNF B Side', 'Img/fnf-b-side-remix.png', 'https://tbg95.github.io/fnf-b-sides-remixes/game.html'],
     ['Infinite Craft', 'Img/NealFun.png', 'https://neal.fun/infinite-craft/'],
     ['Slow Roads', 'Img/SlowRoads.png', 'https://slowroads.io/'],
+    ['ELectricMan2', 'Img/ElectricMan2.png', 'https://games.crazygames.com/en_US/electric-man/index.html'],
+    ['Awesome Pirates', 'Img/AwesomePirates.png', 'https://www.gameflare.com/embed/awesome-pirates/'],
 ];
 
 availableGames.sort(function(a, b) {
